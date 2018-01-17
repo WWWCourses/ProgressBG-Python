@@ -1,0 +1,46 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.exclude": {},
+		// editor
+		"editor.formatOnSave": true,
+		"editor.insertSpaces": false,
+		//python
+		// Path to Python, you can use a custom version of Python by modifying this setting to include the full path.
+		"python.pythonPath": "/usr/bin/python3",
+		// Whether to lint Python files.
+		"python.linting.enabled": true,
+		// Whether to lint Python files using pep8
+		"python.linting.pep8Enabled": false,
+		"python.linting.flake8Enabled": true,
+		"python.formatting.provider": "autopep8",
+		// Whether git is enabled
+		// "git.enabled": false,
+		// "python.pythonPath": "/usr/bin/python3",
+		// "emeraldwalk.runonsave": {
+		// 	"commands": [
+		// 		{
+		// 			"match": ".*",
+		// 			"isAsync": true,
+		// 			"cmd": "echo 'I run for all files.'"
+		// 		},
+		// 		{
+		// 			"match": "\\.txt$",
+		// 			"cmd": "echo 'I am a .txt file ${file}.'"
+		// 		},
+		// 		{
+		// 			"match": "\\.js$",
+		// 			"cmd": "echo 'I am a .js file ${file}.'"
+		// 		},
+		// 		{
+		// 			"match": ".*",
+		// 			"cmd": "echo 'I am ${env.USERNAME}.'"
+		// 		}
+		// 	]
+		// }
+	}
+}

@@ -1,0 +1,1552 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"range",
+				"range\trange"
+			],
+			[
+				"html",
+				"html\thtml"
+			],
+			[
+				"201",
+				"2015-2018"
+			],
+			[
+				"ds",
+				"display"
+			],
+			[
+				"bord",
+				"border"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"ver",
+				"vertical-align"
+			],
+			[
+				"ani",
+				"animation-duration"
+			],
+			[
+				"anim",
+				"animation-name"
+			],
+			[
+				"b",
+				"blur()"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"met",
+				"meta\tTag"
+			],
+			[
+				"do",
+				"down.png\tw:102 h:102"
+			],
+			[
+				"co",
+				"colorsSmall"
+			],
+			[
+				"colo",
+				"colorsObj〔variable〕"
+			],
+			[
+				"lis",
+				"listType〔variable〕"
+			],
+			[
+				"outp",
+				"outputNode〔variable〕"
+			],
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"text-a",
+				"text-align"
+			],
+			[
+				"get",
+				"getElementById〔function〕"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"htm",
+				"html5\tHTML5"
+			],
+			[
+				"htlm",
+				"html\thtml"
+			],
+			[
+				"section",
+				"section\tTag"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"fol",
+				"folders_patterns"
+			],
+			[
+				"sea",
+				"search_pattern"
+			],
+			[
+				"roo",
+				"root_path"
+			],
+			[
+				"pa",
+				"pass"
+			],
+			[
+				"ho",
+				"host"
+			],
+			[
+				"perl",
+				"perl_start\tperl_start"
+			],
+			[
+				"trans",
+				"transition"
+			],
+			[
+				"ro",
+				"rotate()"
+			],
+			[
+				"border-rad",
+				"border-radius: 〔property〕"
+			],
+			[
+				"he",
+				"height\tAttr"
+			],
+			[
+				"inli",
+				"inline"
+			],
+			[
+				"emb",
+				"embed"
+			],
+			[
+				"sli",
+				"slides_examples/"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"html5",
+				"html5\tHTML5"
+			],
+			[
+				"20161120",
+				"20161120.js"
+			],
+			[
+				"ul",
+				"ulIdAttrNode"
+			],
+			[
+				"bo",
+				"bodyNode"
+			],
+			[
+				"test",
+				"testNode〔variable〕"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"fin",
+				"find_odd_or_even_numbers.js"
+			],
+			[
+				"numbr",
+				"numbers〔variable〕"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"tra",
+				"translateY()"
+			],
+			[
+				"a",
+				"a\t<a>"
+			],
+			[
+				"main",
+				"main\t<main>"
+			],
+			[
+				"Sublime",
+				"Sublime Text 3 "
+			],
+			[
+				"r",
+				"right"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"sho",
+				"showTime"
+			],
+			[
+				"col",
+				"col_left"
+			],
+			[
+				"col_",
+				"col_right"
+			],
+			[
+				"btn",
+				"btn_content"
+			],
+			[
+				"bt",
+				"btn_content"
+			],
+			[
+				"lo",
+				"local_var"
+			],
+			[
+				"win",
+				"win_params"
+			],
+			[
+				"ur",
+				"urls"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"test_",
+				"test_var"
+			],
+			[
+				"Ch",
+				"ChangeBackground"
+			],
+			[
+				"pro",
+				"properties"
+			],
+			[
+				"che",
+				"checked_value"
+			],
+			[
+				"qu",
+				"question_id"
+			],
+			[
+				"c",
+				"colors"
+			],
+			[
+				"user",
+				"user_town"
+			],
+			[
+				"use",
+				"user_age"
+			],
+			[
+				"border-bo",
+				"border-box"
+			],
+			[
+				"border-co",
+				"border-color"
+			],
+			[
+				"rota",
+				"rotateZ()"
+			],
+			[
+				"li",
+				"list-style-type"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"n",
+				"none"
+			],
+			[
+				"p",
+				"padding-left"
+			],
+			[
+				"borde",
+				"border-top"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"fi",
+				"fixed"
+			],
+			[
+				"border-b",
+				"border-box"
+			],
+			[
+				"bl",
+				"blue"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"se",
+				"section\tTag"
+			],
+			[
+				"l",
+				"lowercase"
+			],
+			[
+				"f",
+				"fixed"
+			],
+			[
+				"typ",
+				"typeof"
+			],
+			[
+				"RA",
+				"RAT2"
+			],
+			[
+				"RAT",
+				"RAT3"
+			],
+			[
+				"ret",
+				"ret_generator"
+			],
+			[
+				"ed",
+				"edgeC"
+			],
+			[
+				"R",
+				"RAT2"
+			],
+			[
+				"e",
+				"edgeC"
+			],
+			[
+				"sc",
+				"src"
+			],
+			[
+				"s",
+				"square_sum"
+			],
+			[
+				"fn",
+				"function"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"t",
+				"text-bottom"
+			],
+			[
+				"to",
+				"text-top"
+			],
+			[
+				"ch",
+				"changeArrow"
+			],
+			[
+				"margi",
+				"margin"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"ti",
+				"title"
+			],
+			[
+				"eff",
+				"effected_node"
+			],
+			[
+				"arr",
+				"arr_node"
+			],
+			[
+				"ar",
+				"arr_node"
+			],
+			[
+				"fis",
+				"first_name"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"al",
+				"alian1"
+			],
+			[
+				"ali",
+				"alien"
+			],
+			[
+				"coun",
+				"count"
+			],
+			[
+				"cou",
+				"count"
+			],
+			[
+				"ra",
+				"rat2"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"пра",
+				"правоъгълни"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "pages/agenda/agenda.html",
+			"settings":
+			{
+				"buffer_size": 6683,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"theme",
+				"DA UI: Theme Settings"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"num",
+				"Insert Nums"
+			],
+			[
+				"live",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"set shell",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"conver",
+				"Convert Case: snake_case"
+			],
+			[
+				"cyrill",
+				"Translit: Russian Cyrillic -> Latin (GOST 7.79b)"
+			],
+			[
+				"convert",
+				"Convert Case: dash-case"
+			],
+			[
+				"trasn",
+				"Translit: Russian Cyrillic -> Latin (GOST 7.79b)"
+			],
+			[
+				"Came",
+				"Convert Case: camelCase"
+			],
+			[
+				"trans",
+				"Translit: Russian Cyrillic -> Latin (GOST 7.79b)"
+			],
+			[
+				"tra",
+				"Translit: Russian Cyrillic -> Latin (GOST 7.79b)"
+			],
+			[
+				"con",
+				"Convert Case: PascalCase"
+			],
+			[
+				"snipp code",
+				"Snippet: html_code_rel_terminal"
+			],
+			[
+				"snip code",
+				"Snippet: html_code_rel_html"
+			],
+			[
+				"mini",
+				"View: Toggle Minimap"
+			],
+			[
+				"enti",
+				"String Utilities: Convert Chars to HTML Entities"
+			],
+			[
+				"snipp js",
+				"Snippet: html_code_rel_js"
+			],
+			[
+				"Snippet: js",
+				"Snippet: html_code_rel_js"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings"
+			],
+			[
+				"sett",
+				"Preferences: Settings"
+			],
+			[
+				"settin",
+				"Preferences: Settings"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"nu",
+				"Insert Nums"
+			],
+			[
+				"lis",
+				"Package Control: List Packages"
+			],
+			[
+				"colo",
+				"Select Color Scheme"
+			],
+			[
+				"set per",
+				"Set Syntax: Perl"
+			],
+			[
+				"l",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"set ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"settings",
+				"Preferences: Settings"
+			],
+			[
+				"Snippet: p",
+				"Snippet: perl_start"
+			],
+			[
+				"li",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"liv",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"setting",
+				"Preferences: Settings"
+			],
+			[
+				"set css",
+				"Set Syntax: CSS"
+			],
+			[
+				"set perl",
+				"Set Syntax: Perl"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"prefe",
+				"Preferences: Settings"
+			],
+			[
+				"nums",
+				"Insert Nums"
+			],
+			[
+				"numd",
+				"String Utilities: Calculate MD5"
+			],
+			[
+				"decode",
+				"String Utilities: Decode from URL Notation"
+			],
+			[
+				"html en",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"livere",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Material Theme: Activate theme",
+				"Material Theme: Activate theme"
+			],
+			[
+				"set html",
+				"Set Syntax: HTML"
+			],
+			[
+				"view",
+				"View In Browser"
+			],
+			[
+				"upda",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"set ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"LiveReload: Enable/disable plugins",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"col",
+				"Color Picker"
+			],
+			[
+				"Snippet: ",
+				"Snippet: HTML5"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"VIEW",
+				"View In Browser"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"lint ena",
+				"SublimeLinter: Enable Linter"
+			],
+			[
+				"lint",
+				"SublimeLinter: Disable Linting"
+			],
+			[
+				"set htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"linter",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"linter to",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"lin",
+				"SublimeLinter: Choose Lint Mode"
+			],
+			[
+				"css3",
+				"CSS3: Clear Gutter Marks"
+			],
+			[
+				"css",
+				"CSS3: Validate"
+			],
+			[
+				"cssli",
+				"CSS3: Validate"
+			],
+			[
+				"ab",
+				"About"
+			],
+			[
+				"in",
+				"Insert Nums"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"disab",
+				"Package Control: Disable Package"
+			],
+			[
+				"set plain",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"codein",
+				"SublimeCodeIntel: Enable Live Autocompletion for Current Language"
+			],
+			[
+				"Codein",
+				"SublimeCodeIntel: Enable Live Autocompletion for Current Language"
+			],
+			[
+				"autocom",
+				"SublimeCodeIntel: Enable Live Autocompletion for Current Language"
+			],
+			[
+				"tern",
+				"TernJS: Jump to definition"
+			],
+			[
+				"ter",
+				"TernJS: Jump to definition"
+			],
+			[
+				"switch",
+				"Git (SideBarGit): Log: list of changes last 50 with commit"
+			],
+			[
+				"set Ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"set php",
+				"Set Syntax: PHP"
+			],
+			[
+				"V",
+				"View In Browser"
+			],
+			[
+				"vi",
+				"View In Browser"
+			],
+			[
+				"v",
+				"View In Browser"
+			],
+			[
+				"insert",
+				"Insert Nums"
+			],
+			[
+				"ins",
+				"Insert Nums"
+			],
+			[
+				"setsy ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"liner",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"LInter",
+				"SublimeLinter: Choose Lint Mode"
+			],
+			[
+				"Lint",
+				"SublimeLinter: Choose Lint Mode"
+			],
+			[
+				"Tag",
+				"Tag: Auto-Format Tags on Document"
+			],
+			[
+				"brack",
+				"BracketHighlighter: Toggle Global Enable"
+			],
+			[
+				"",
+				"BracketHighlighter: Toggle Global Enable"
+			],
+			[
+				"Brack",
+				"BracketHighlighter: Toggle High Visibility Mode"
+			],
+			[
+				"Brac",
+				"BracketHighlighter: Toggle Global Enable"
+			],
+			[
+				"Bracket",
+				"BracketHighlighter: Toggle Global Enable"
+			],
+			[
+				"Bra",
+				"BracketHighlighter: Toggle High Visibility Mode"
+			],
+			[
+				"Pack",
+				"Package Control: Install Package"
+			],
+			[
+				"syn",
+				"SyntaxFold: Open README"
+			],
+			[
+				"SYn",
+				"SyntaxFold: Fold All Default"
+			],
+			[
+				"Sy",
+				"SyntaxFold: Show Panel"
+			],
+			[
+				"SYnta",
+				"SyntaxFold: Fold All Default"
+			],
+			[
+				"matchin",
+				"Emmet: Go to Matching Pair"
+			],
+			[
+				"Ra",
+				"Raw Line Edit: Toggle"
+			],
+			[
+				"Raw",
+				"Raw Line Edit: Toggle"
+			],
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"pic",
+				"Color Picker"
+			],
+			[
+				"Packa",
+				"Package Control: Install Package"
+			],
+			[
+				"Pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: Ctags",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 257.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"view.settings().get('theme')",
+			"print(buf_key)",
+			"print(buffers)",
+			"dir(sys)",
+			"import sys",
+			"view.run_command('dialog_example')",
+			"view.run_command('update_edit_duration')",
+			"run_command('update_edit_duration')",
+			"print('\\n'*10)",
+			"print('\\n'*5)",
+			"print('~'*30)",
+			"view.run_command('update_edit_duration')",
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			"import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/.bin",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/pages",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/pages/agenda",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/pages/readings"
+	],
+	"file_history":
+	[
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/pages/readings/UsefulResources.html",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/Учебна програма по “Програмиране с Python” ",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/.gitignore",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/pages/readings/advanced/UsefulResources.html",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/outfit/css/agenda.css",
+		"/home/nemsys/Downloads/pycharm-community-2017.3.3/Install-Linux-tar.txt",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/.bin/live-server.sh",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/.bin/load_chrome.sh",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/projects/test.py",
+		"/home/nemsys/Documents/{}/shopping",
+		"/home/nemsys/Documents/{}/accounts",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/HowTos/virtualenv-setup.howto",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/HowTos/pyenv-InstallAndInit.howto",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/LIVE/labs/js/test.js",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/LIVE/labs/pages/JS_Intro.html",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/students/KristinIvanova/Pencil_animation.html",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/students/KristinIvanova/we_code_logo.html",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/students/HristoRaynov/HR HW16_01_2018/456We_code_logo page.html",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/.TODO",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/.gitignore",
+		"/data/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/pages/themes/beginners/CSS_Selectors_1/CSS_Selectors_part1.html",
+		"/data/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/pages/themes/beginners/HTML_Tables/HTML_Tables.html",
+		"/data/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/pages/themes/beginners/HTML_InputForms/HTML5_input_forms.html",
+		"/data/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/pages/themes/beginners/HTML_Text_Formating_Elements/HTML_Text_Formating_Elements.html",
+		"/data/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/pages/themes/beginners/Tools_ST3/Tools_ST3.html",
+		"/data/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/outfit/css/reveal.js.css",
+		"/data/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/pages/themes/beginners/Course_Intro/Course_Intro.html",
+		"/data/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/projects/CV_examples/Responsive Resume_CV Template for Developers/Responsive Resume_CV Template for Developers_files/styles.css",
+		"/data/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/pages/themes/beginners/HTML_Bases/HTML_Bases.html",
+		"/data/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/pages/themes/beginners/CSS_Animations_and_Visual_Effects/CSS_Animations_and_Visual_Effects.html",
+		"/data/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/gh_pages.sublime-project",
+		"/data/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/.bin/load_chrome.sh",
+		"/data/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/labs/pages/marginExample.html",
+		"/data/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/.bin/live-server.sh",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/gh-pages.sublime-",
+		"/data/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/labs/pages/css_positioning.html",
+		"/data/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/labs/pages/float.html",
+		"/data/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/students/Lyubomir/index_7_CSS.html",
+		"/data/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/pages/themes/beginners/CSS_Box_Model/CSS_Box_Model.html",
+		"/data/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/pages/themes/beginners/CSS_Box_Model/slides_examples/dev_tools_example.html",
+		"/etc/default/tlp",
+		"/home/nemsys/.config/gromit-mpx.cfg",
+		"/data/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/.bin/start_gromit.sh",
+		"/data/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/.gitignore",
+		"/data/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/pages/themes/beginners/CSS_BasicProperties/CSS_Basic_Properties.html",
+		"/data/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/pages/themes/beginners/HTML_Lists/HTML_Lists.html",
+		"/data/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/pages/themes/beginners/HTML_Text_Formating_Elements/homework/CV-Template/IvanIvanovCV.html",
+		"/data/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/outfit/css/themes/light.css",
+		"/data/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/outfit/css/themes/dark.css",
+		"/data/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/outfit/css/colorSchemes/light/structuring_elements.css",
+		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/themes/beginners/CSS_Selectors_1/CSS_Selectors_1.html",
+		"/DATA/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/pages/themes/beginners/CSS_Box_Model/CSS_Box_Model.html",
+		"/DATA/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/pages/themes/beginners/Course_Intro/Course_Intro.html",
+		"/home/nemsys/Documents/{}",
+		"/DATA/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/pages/themes/beginners/CSS_Selectors_2/CSS_Selectors_2.html",
+		"/DATA/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/pages/themes/beginners/CSS_Shadows_and_Gradients/CSS_Shadows_and_Gradients.html",
+		"/DATA/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/pages/themes/beginners/CSS_Visual_Formating_Model/CSS_Visual_Formating_Model.html",
+		"/DATA/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/pages/themes/beginners/HTML_Bases/HTML_Bases.html",
+		"/DATA/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/pages/themes/beginners/HTML_InputForms/HTML5_input_forms.html",
+		"/DATA/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/pages/themes/beginners/HTML_Lists/HTML_Lists.html",
+		"/DATA/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/pages/themes/beginners/HTML_Tables/HTML_Tables.html",
+		"/DATA/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/pages/themes/beginners/HTML_Text_Formating_Elements/HTML_Text_Formating_Elements.html",
+		"/DATA/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/pages/themes/beginners/_cliches/slides.html",
+		"/DATA/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/pages/themes/beginners/_cliches/slides.old.html",
+		"/DATA/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/pages/themes/beginners/CSS_Animations_and_Visual_Effects/CSS_Animations_and_Visual_Effects.html",
+		"/DATA/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/pages/themes/beginners/CSS_BasicProperties/CSS_Basic_Properties.html",
+		"/DATA/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/pages/themes/beginners/CSS_Intro/CSS_Intro.html",
+		"/DATA/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/pages/themes/beginners/CSS_Selectors_1/CSS_Selectors_part1.html",
+		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/5_WE.sublime-project",
+		"/DATA/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/gh_pages.sublime-project",
+		"/DATA/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/pages/agenda/beginners.html",
+		"/DATA/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/index.html",
+		"/DATA/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/pages/themes/beginners/CSS_Selectors_2/slides_examples/pure_css_hamburger_menu.html",
+		"/home/nemsys/.config/sublime-text-3/Packages/HTML-CSS-JS Prettify/README.md",
+		"/DATA/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/labs/css/main.css",
+		"/DATA/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/labs/pages/css_intro.html",
+		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/sti",
+		"/DATA/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/labs/pages/contacts.html",
+		"/DATA/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/labs/pages/tables.html",
+		"/DATA/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/labs/pages/forms.html",
+		"/DATA/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/labs/cgi-bin/reg.pl",
+		"/DATA/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/labs/index.html",
+		"/DATA/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/labs/pages/lists.html",
+		"/DATA/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/labs/pages/index.html",
+		"/DATA/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/labs/20170122.html",
+		"/DATA/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/pages/themes/beginners/HTML_Text_Formating_Elements/homework/personal_page_task",
+		"/DATA/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/labs/20170122.css",
+		"/home/nemsys/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/labs/css_intro/test.css",
+		"/home/nemsys/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/labs/lists/tables.html",
+		"/home/nemsys/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/labs/css_intro/20170122.html",
+		"/home/nemsys/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/labs/css_intro/main.css",
+		"/home/nemsys/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/labs/lists/lists.html",
+		"/home/nemsys/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/labs/pages/contacts.html",
+		"/home/nemsys/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/labs/pages/about.html",
+		"/home/nemsys/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/labs/pages/gallery.html",
+		"/home/nemsys/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/labs/pages/CV.html",
+		"/home/nemsys/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/labs/pages/news.html",
+		"/home/nemsys/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/labs/index.html",
+		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/themes/beginners/HTML_Bases/labs/20170106.html",
+		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/themes/beginners/HTML_Bases/tmp/labs/20170106.html",
+		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/outfit/css/homework_for_pdf.css",
+		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/themes/beginners/JS_BasicSyntax_2/homework/simple_array_operations/RESULT_simple_array_operations.js",
+		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/themes/beginners/JS_BasicSyntax_2/homework/simple_array_operations/RESULT_simple_array_operations.html",
+		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/themes/beginners/JS_BasicSyntax_2/homework/simple_array_operations/TASK_simple_array_operations.html",
+		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/themes/beginners/CSS_BasicProperties/CSS_Basic_Properties.html",
+		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/themes/beginners/JS_BasicSyntax_2/homework/array_odd_even_numbers/TASK_find_odd_or_even_numbers.html",
+		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/themes/beginners/JS_BasicSyntax_2/homework/simle_array_operations/simle_array_operations.js",
+		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/themes/beginners/JS_BasicSyntax_2/homework/simle_array_operations/TASK_simle_array_operations",
+		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/themes/beginners/_cliches/homework.html",
+		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/themes/beginners/JS_BasicSyntax_2/homework/TASK_find_odd_or_even_numbers.html",
+		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/themes/beginners/JS_BasicSyntax_2/homework/simle_array_operations.js",
+		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/themes/beginners/JS_BasicSyntax_2/slides_examples/objects.html",
+		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/themes/beginners/JS_BasicSyntax_2/slides_examples/objects.js",
+		"/home/nemsys/.config/sublime-text-3/Packages/User/Snippets/perl_start_simple.sublime-snippet",
+		"/home/nemsys/.config/sublime-text-3/Packages/User/Snippets/perl_start.sublime-snippet",
+		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/themes/beginners/CSS_Selectors_2/CSS_Selectors_2.html",
+		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/outfit/css/reveal.js.css",
+		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/themes/beginners/JS_BasicSyntax_2/JS_BasicSyntax_2.html",
+		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/themes/beginners/JS_Basic_Syntax/JS_BasicSyntax.html",
+		"/home/nemsys/projects/tips/linux/thinkpad/trackpoint_settings",
+		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/themes/beginners/_cliches/slides.html",
+		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/agenda/beginners.html",
+		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/themes/beginners/JS_Basic_Syntax/codepen_examples/auto_list_generator/auto_list_generator.html",
+		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/themes/beginners/JS_Basic_Syntax/codepen_examples/array_methods/array_methods.html",
+		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/readings/beginners/UsefulResources.html",
+		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/.gitignore",
+		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/outfit/css/readings.css",
+		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/themes/beginners/Appendix/CourseProject/SiteStructureTemplate.txt"
+	],
+	"find":
+	{
+		"height": 41.0
+	},
+	"find_in_files":
+	{
+		"height": 161.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Tools_ST3",
+			"<i class=\"fa fa-file-powerpoint-o\"></i>",
+			"ready"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "pages/agenda/agenda.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6683,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4442,
+								4447
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 156.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 41.0
+	},
+	"input":
+	{
+		"height": 59.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/BuildSystems/NodeJS.sublime-build",
+	"project": "PythonCourse.sublime-project",
+	"replace":
+	{
+		"height": 78.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"js_fun",
+				"pages/themes/beginners/JS_BasicSyntax_2/homework/js_functions_1.js"
+			],
+			[
+				"slides.",
+				"outfit/js/slides.js"
+			],
+			[
+				"dark.css",
+				"outfit/css/themes/dark.css"
+			],
+			[
+				"light.css",
+				"outfit/css/themes/light.css"
+			],
+			[
+				"fs-small",
+				"lib/reveal.js/lib/font/source-sans-pro/source-sans-pro-semibolditalic.woff"
+			],
+			[
+				"pass_check",
+				"ProgressBG/Lessons/themes/18_Validating_Web_forms_with_JS/Didi/pass_check.css"
+			],
+			[
+				"timed_changing_colors",
+				"ProgressBG/Lessons/themes/15_JS_Масиви_Обекти/examples/timed_changing_colors.js"
+			],
+			[
+				"",
+				"ProgressBG/Lessons/themes/15_JS_Масиви_Обекти/examples/timed_changing_colors.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 543.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"/DATA/projects/www/wwwcourses.github.io/IT-Academy-Front-End-Dev/gh_pages.sublime-workspace"
+			],
+			[
+				"uber",
+				"~/projects/project_files/sublime/HackerRank.sublime-project"
+			],
+			[
+				"ha",
+				"~/projects/project_files/sublime/HackerRank.sublime-project"
+			],
+			[
+				"list",
+				"~/projects/sublime/IT-Academy.sublime-project"
+			],
+			[
+				"Pro",
+				"~/projects/sublime/ProjectTemplate.sublime-project"
+			]
+		],
+		"width": 456.0
+	},
+	"select_symbol":
+	{
+		"height": 102.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"curr",
+				"get_current_date"
+			],
+			[
+				"logo_",
+				"log_to_file"
+			],
+			[
+				"rel",
+				"release_DB_handle"
+			],
+			[
+				"",
+				"create_inline_map"
+			]
+		],
+		"width": 378.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 221.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
