@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"font-s",
+				"font-size\tproperty"
+			],
+			[
+				"dl",
+				"dlfa\thtml_dl"
+			],
+			[
+				"INs",
+				"Install"
+			],
+			[
+				"doce",
+				"docker-ce"
+			],
+			[
+				"code",
+				"codeTerminal\thtml_code_rel_terminal"
+			],
+			[
 				"range",
 				"range\trange"
 			],
@@ -364,10 +384,6 @@
 				"blue"
 			],
 			[
-				"font-s",
-				"font-size"
-			],
-			[
 				"ba",
 				"background"
 			],
@@ -498,22 +514,6 @@
 			[
 				"coun",
 				"count"
-			],
-			[
-				"cou",
-				"count"
-			],
-			[
-				"ra",
-				"rat2"
-			],
-			[
-				"cons",
-				"console"
-			],
-			[
-				"пра",
-				"правоъгълни"
 			]
 		]
 	},
@@ -523,7 +523,16 @@
 			"file": "pages/agenda/agenda.html",
 			"settings":
 			{
-				"buffer_size": 6683,
+				"buffer_size": 6680,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pages/themes/beginners/Course_Intro/Course_Intro.html",
+			"settings":
+			{
+				"buffer_size": 11110,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -540,6 +549,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"convert",
+				"Convert Case: PascalCase"
+			],
 			[
 				"instal",
 				"Package Control: Install Package"
@@ -579,10 +592,6 @@
 			[
 				"cyrill",
 				"Translit: Russian Cyrillic -> Latin (GOST 7.79b)"
-			],
-			[
-				"convert",
-				"Convert Case: dash-case"
 			],
 			[
 				"trasn",
@@ -1034,15 +1043,32 @@
 	"expanded_folders":
 	[
 		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python",
-		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/.bin",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/docs",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/outfit",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/outfit/css",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/outfit/css/colorSchemes",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/outfit/css/colorSchemes/dark",
 		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/pages",
 		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/pages/agenda",
-		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/pages/readings"
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/pages/readings",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/pages/themes",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/pages/themes/beginners",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/pages/themes/beginners/Course_Intro",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/pages/themes/beginners/Course_Intro/images"
 	],
 	"file_history":
 	[
-		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/pages/readings/UsefulResources.html",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/outfit/css/custom_hljs.css",
+		"/home/nemsys/Documents/{}/accounts",
 		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/Учебна програма по “Програмиране с Python” ",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/outfit/css/colorSchemes/dark/text_schemes.css",
+		"/data/Optoma pk301/PK301800.wff",
+		"/data/Optoma pk301/PK3011000.wff",
+		"/data/Downloads/Torrnets/Yana i Yanko 2017 WEB-DL 1080p.srt",
+		"/data/Downloads/Torrnets/Yana i Yanko 2017 WEB-DL 1080p.mkv",
+		"/media/nemsys/PK301/PC Software/PK301.txt",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/docs/program.specs",
+		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/pages/readings/UsefulResources.html",
 		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/.gitignore",
 		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/pages/readings/advanced/UsefulResources.html",
 		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/outfit/css/agenda.css",
@@ -1051,7 +1077,6 @@
 		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/.bin/load_chrome.sh",
 		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/projects/test.py",
 		"/home/nemsys/Documents/{}/shopping",
-		"/home/nemsys/Documents/{}/accounts",
 		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/HowTos/virtualenv-setup.howto",
 		"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/HowTos/pyenv-InstallAndInit.howto",
 		"/data/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/LIVE/labs/js/test.js",
@@ -1160,15 +1185,7 @@
 		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/outfit/css/reveal.js.css",
 		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/themes/beginners/JS_BasicSyntax_2/JS_BasicSyntax_2.html",
 		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/themes/beginners/JS_Basic_Syntax/JS_BasicSyntax.html",
-		"/home/nemsys/projects/tips/linux/thinkpad/trackpoint_settings",
-		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/themes/beginners/_cliches/slides.html",
-		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/agenda/beginners.html",
-		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/themes/beginners/JS_Basic_Syntax/codepen_examples/auto_list_generator/auto_list_generator.html",
-		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/themes/beginners/JS_Basic_Syntax/codepen_examples/array_methods/array_methods.html",
-		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/readings/beginners/UsefulResources.html",
-		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/.gitignore",
-		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/outfit/css/readings.css",
-		"/DATA/projects/www/wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/themes/beginners/Appendix/CourseProject/SiteStructureTemplate.txt"
+		"/home/nemsys/projects/tips/linux/thinkpad/trackpoint_settings"
 	],
 	"find":
 	{
@@ -1179,6 +1196,7 @@
 		"height": 161.0,
 		"where_history":
 		[
+			"/data/projects/www/wwwcourses.github.io/ProgressBG-Python/outfit/css"
 		]
 	},
 	"find_state":
@@ -1186,6 +1204,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"smaller",
+			"pac",
+			"pb",
+			"%%",
 			"Tools_ST3",
 			"<i class=\"fa fa-file-powerpoint-o\"></i>",
 			"ready"
@@ -1207,7 +1229,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -1216,15 +1238,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6683,
+						"buffer_size": 6680,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4442,
-								4447
+								4029,
+								4040
 							]
 						],
 						"settings":
@@ -1236,12 +1258,27 @@
 							{
 								"close":
 								{
+									"1":
+									[
+										4042,
+										4044
+									]
 								},
 								"icon":
 								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/tag.png",
+										"region.orangish"
+									]
 								},
 								"open":
 								{
+									"1":
+									[
+										4026,
+										4028
+									]
 								},
 								"unmatched":
 								{
@@ -1264,36 +1301,26 @@
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
@@ -1303,18 +1330,43 @@
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
-								"bh_square_content"
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
 							],
 							"bracket_highlighter.locations":
 							{
 								"close":
 								{
+									"1":
+									[
+										4042,
+										4044
+									]
 								},
 								"icon":
 								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/tag.png",
+										"region.orangish"
+									]
 								},
 								"open":
 								{
+									"1":
+									[
+										4026,
+										4028
+									]
 								},
 								"unmatched":
 								{
@@ -1327,56 +1379,56 @@
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
 							],
 							"incomplete_sync": null,
 							"remote_loading": false,
@@ -1386,7 +1438,215 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 156.0,
+						"translation.y": 1760.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "pages/themes/beginners/Course_Intro/Course_Intro.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11110,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4964,
+								4964
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										5505,
+										5512
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/tag.png",
+										"region.orangish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										4933,
+										4940
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										5505,
+										5512
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/tag.png",
+										"region.orangish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										4933,
+										4940
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 489.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1397,7 +1657,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 41.0
+		"height": 31.0
 	},
 	"input":
 	{
@@ -1438,7 +1698,7 @@
 	"project": "PythonCourse.sublime-project",
 	"replace":
 	{
-		"height": 78.0
+		"height": 58.0
 	},
 	"save_all_on_build": false,
 	"select_file":
