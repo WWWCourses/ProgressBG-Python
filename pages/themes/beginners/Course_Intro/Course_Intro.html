@@ -27,7 +27,7 @@
 <body>
 	<div class="reveal default center" data-transition-speed="default" data-background-transition="default">
 		<div class="top_links">
-			<a class="home_link" href="/ProgressBG-Python/pages/agenda/beginners.html#Course_Intro" target="_top"><i class="fa fa-home"></i></a>
+			<a class="home_link" href="/ProgressBG-Python/pages/agenda/agenda.html#Course_Intro" target="_top"><i class="fa fa-home"></i></a>
 			<span class="help_link" href="#"><i class="fa fa-question"></i></span>
 			<div class="help_text">
 				<div><span>N/Спейс</span><span>следващ слайд</span></div>
@@ -168,6 +168,7 @@
 				<br><code>C:/Python27</code> or <br>
 				<code>C:/Python36</code></dd>
 			<dd>Select "Add Python to PATH"</dd>
+			<p class="note">If you don't have a convenient terminal install <code>gitbash for windows</code>, which is included in the <a href="https://gitforwindows.org/">git for windows</a> package.</p>
 		</dl>
 	</section>
 	<section><h3>Install Python on Windows - more info</h3>
@@ -178,10 +179,13 @@
 	</section>
 	<section><h3>Install Python on Mac - more info</h3>
 		<dl class="fa">
-			<dt><a href="https://docs.python.org/3/using/mac.html">Using Python on a Macintosh</a></dt>
+			<dt><a href="https://docs.python.org/3/using/mac.html">Using Python on a Macintosh @docs.python.org</a></dt>
 		</dl>
 	</section>
 	<section><h3>Install Python on Linux</h3>
+		<dl class="fa">
+			<dt><a href="https://docs.python.org/3/using/unix.html#on-linux">Using Python on Linux @docs.python.org</a></dt>
+		</dl>
 	</section>
 	<section><h3>Verify installation:</h3>
 		<dl class="fa">
@@ -198,9 +202,17 @@
 	</section>
 </section>
 
-<section><h2>Write first Python script (using IDLE).</h2>
+<section><h2>Let's get dirty - write your first Python script (using IDLE).</h2>
 	<section><h3></h3>
-
+		<dl class="fa">
+			<dt>Open your Python's <a href="https://en.wikipedia.org/wiki/IDLE">IDLE</a></dt>
+			<dt>Write down next code (<span class="note">put your names in the quotes</span>) and hit <kbd>enter</kbd>:</dt>
+		</dl>
+		<pre><code rel="Python" class="python">
+			first_name = "Iva"
+			last_name = "Popova"
+			print(first_name + last_name)
+		</code></pre>
 	</section>
 </section>
 
@@ -230,16 +242,83 @@
 	</section>
 </section>
 
-<section><h2>Python Virtual Environments</h2>
-	<section><h3>What and Why?</h3>
+<section><h2>Python Virtual Environments with Pipenv</h2>
+	<section><h3>Virtual environment - What and Why?</h3>
 		<dl class="fa">
 			<dt>A tool to create an isolated Python environment.</dt>
 			<dt>Keep workflows between projects independent.</dt>
+			<dt>Keeps dependency management hell away</dt>
 		</dl>
 	</section>
-	<section><h3></h3></section>
-	<section><h3></h3></section>
-	<section><h3></h3></section>
+	<section><h3>Pipenv - What?</h3>
+		<dl class="fa">
+			<dt>A dependency manager for Python projects</dt>
+			<dt>Functionally similar to npm and other modern package managers.</dt>
+			<dt>It’s the recommended higher-level tool to simplify dependency management</dt>
+		</dl>
+	</section>
+	<section><h3>Pipenv - Install</h3>
+		<pre><code rel="python" class="python">
+			pip install --user pipenv
+		</code></pre>		
+	</section>
+	<section><h3>Pipenv - installing packages for your project</h3>
+		<pre><code rel="Python" class="python">
+			cd myproject
+			pipenv install requests
+		</code></pre><br>
+		<pre><code rel="Output" class="shell">
+			⠋New python executable in /home/nemsys/.local/share/virtualenvs/pipenv_project_1-J3P05F8y/bin/python
+			Installing setuptools, pip, wheel...done.
+
+			Virtualenv location: /home/nemsys/.local/share/virtualenvs/pipenv_project_1-J3P05F8y
+			Creating a Pipfile for this project…
+			...
+			To activate this project's virtualenv, run the following:
+ 			$ pipenv shell
+		</code></pre><br>		
+	</section>
+	<section><h3>Pipenv - activate the virtual environment</h3>
+		<pre><code rel="python" class="python">
+			pipenv shell			
+		</code></pre>
+		<p>After that your terminal will start a new session with the new virtualenv loaded</p>
+	</section>
+	<section><h3>Check the installed packages</h3>
+		<pre><code rel="Python" class="python">
+			pip freeze
+		</code></pre>
+	</section>
+	<section><h3>Use the installed module in your program</h3>
+		<p>Write down next code:</p>
+		<pre><code rel="Python" class="python">
+			import requests
+
+			response = requests.get('https://httpbin.org/ip')
+
+			print('Your IP is {0}'.format(response.json()['origin']))
+		</code></pre>
+	</section>
+	<section><h3>Exit the virtual environment</h3>
+		<pre><code rel="Python" class="python">
+			exit
+		</code></pre>
+		<p>Or type <kbd>ctrl-d</kbd></p>
+		<p>Or close your terminal windows :)</p>		
+	</section>
+</section>
+
+<section><h2>Python IDEs and text editors</h2>
+	<section><h3>IDEs</h3>
+		<dl class="fa">
+			<dt><a href="https://www.jetbrains.com/pycharm/">JetBrains' PyCharm</a></dt>
+			<dd>Download free <a href="https://www.jetbrains.com/pycharm/download"></a>community edition</dd>
+			<dt><a href="https://www.sublimetext.com/">Sublime Text 3</a></dt>
+			<dd>More on using Sublime Text with Python: <a href="https://realpython.com/blog/python/setting-up-sublime-text-3-for-full-stack-python-development/">Setting Up Sublime Text 3 for Full Stack Python Development</a></dd>
+			<dt><a href="https://code.visualstudio.com/">Visual Studio Code</a></dt>
+			<dd>More on using VS Code with Python <a href="https://code.visualstudio.com/docs/languages/python">Python in Visual Studio Code</a></dd>
+		</dl>
+	</section>
 </section>
 
 <!-- <section><h2>Set up docker for python</h2>
@@ -327,17 +406,12 @@
 	</section>
 </section> -->
 
-<section><h2>Python IDEs/editors</h2>
-	<section><h3></h3>
 
-	</section>
-</section>
-
-<section id="hw">
+<!-- <section id="hw">
 	<section><h1>Задачи за упражнения</h1></section>
 	<section id="task1"><h3>%%Task1_Title%%</h3>		
 	</section>	
-</section>
+</section> -->
 
 <section class="disclaimer" data-background="/ProgressBG-Python/outfit/images/for_slides/the_end_on_sand.jpg">
 	 <p>These slides are based on</p>
