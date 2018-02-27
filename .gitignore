@@ -101,5 +101,5 @@ ENV/
 .mypy_cache/
 
 #other
-.sublime-workspace
+*.sublime-workspace
 nohup.out
