@@ -104,10 +104,7 @@
             border-bottom: none;
             /*background-color: #239DD5;*/
             /*color: #FFF;*/
-        }       
-        a.nonready{
-            color: #BBB;
-        }
+        }              
 
         /*~~~~~~~~~~ The list  ~~~~~~~~~~*/
         .iep_syllabus_themes{
@@ -146,6 +143,9 @@
             text-rendering: auto;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
+        }
+        .iep_syllabus_themes>li>h3>a.nonready{
+            color: #BBB;
         }
         .iep_syllabus_themes>li>h3:hover>a.ready, .grabAttnetion{
             background: none;
