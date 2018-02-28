@@ -5,10 +5,24 @@
 		}
 	],
 	"settings": {
-		"files.exclude": {},
+		"files.exclude": {
+			// this excludes all folders 
+			// named "node_modules" from 
+			// the explore tree
+			"**/node_modules": false,
+		},
 		// editor
-		"editor.formatOnSave": true,
+		"editor.formatOnSave": false,
 		"editor.insertSpaces": false,
+		"editor.parameterHints": false,
+		"editor.overviewRulerBorder": false,
+		"editor.hover": false,
+
+		// htmls
+		"html.suggest.angular1": false,
+		"html.suggest.html5": false,
+		// Configures if the built-in HTML language support suggests Ionic tags, properties and values.
+		"html.suggest.ionic": false,
 		//python
 		// Path to Python, you can use a custom version of Python by modifying this setting to include the full path.
 		"python.pythonPath": "/usr/bin/python3",
@@ -19,7 +33,7 @@
 		"python.linting.flake8Enabled": true,
 		"python.formatting.provider": "autopep8",
 		// Whether git is enabled
-		// "git.enabled": false,
+		"git.enabled": false,
 		// "python.pythonPath": "/usr/bin/python3",
 		// "emeraldwalk.runonsave": {
 		// 	"commands": [
