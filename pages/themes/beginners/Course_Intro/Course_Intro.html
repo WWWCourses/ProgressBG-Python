@@ -312,7 +312,7 @@
 	</section>
 </section>
 
-<section><h2>Python Virtual Environments with Pipenv</h2>
+<section><h2 class="advanced">Python Virtual Environments with Pipenv</h2>
 	<section><h3>Virtual environment - What and Why?</h3>
 		<dl class="fa">
 			<dt>Many system modules depends on some specific versions of Python's packages - it's not a good idea to pollute your global python environment</dt>
@@ -378,14 +378,21 @@
 		</code></pre>
 	</section>
 	<section><h3>Use the installed module in your program</h3>
-		<p>Write down next code:</p>
-		<pre><code rel="Python" class="python">
-			import requests
+		<dl class="fa">
+			<dt>Create a file <code>my_ip.py</code></dt>
+			<dt>Write in it:</dt>
+			<pre><code rel="Python" class="python">
+				import requests
 
-			response = requests.get('https://httpbin.org/ip')
+				response = requests.get('https://httpbin.org/ip')
 
-			print('Your IP is {0}'.format(response.json()['origin']))
-		</code></pre>
+				print('Your IP is {0}'.format(response.json()['origin']))
+			</code></pre>
+			<dt>Execute your program within the pipenv shell:</dt>
+			<pre><code rel="Bash" class="bash">
+				(course_intro-SmgljMaj) $ python my_ip.py
+			</code></pre>
+		</dl>
 	</section>
 	<section><h3>Exit the virtual environment</h3>
 		<pre><code rel="Python" class="python">
@@ -403,7 +410,7 @@
 
 				# get into pipenv shell
 				$ pipenv shell
-				((course_intro-SmgljMaj) ) $
+				(course_intro-SmgljMaj) $
 
 				# get python path
 				which python
