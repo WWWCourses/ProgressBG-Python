@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>stringsAndNumbers</title>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+	<!-- css & themes include -->
+	<link rel="stylesheet" href="/ProgressBG-Python/lib/reveal.js/css/reveal.css">
+	<link rel="stylesheet" href="/ProgressBG-Python/outfit/css/themes/light.css" id="theme">
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? '/ProgressBG-Python/lib/reveal.js/css/print/pdf.css' : '/ProgressBG-Python/lib/reveal.js/css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+
+	<!-- CUSTOM -->	
+	<base target="_blank">
+</head>
+<body>
+	<div class="reveal default center" data-transition-speed="default" data-background-transition="default">
+		<div class="top_links">
+			<a class="home_link" href="/ProgressBG-Python/pages/agenda/agenda.html#Course_Intro" target="_top"><i class="fa fa-home"></i></a>
+			<span class="help_link" href="#"><i class="fa fa-question"></i></span>
+			<div class="help_text">
+				<div><span>N/Спейс</span><span>следващ слайд</span></div>
+				<div><span>P</span><span>предишен слайд</span></div>
+				<div><span>O</span><span>всички слайдове</span></div>
+				<div><span>ctrl+left click</span><span>увеличава елемента</span></div>
+			</div>
+		</div>
+		<div class="footer theme_switch">
+			<a href="#" onclick="document.getElementById('theme').setAttribute('href','/ProgressBG-Python/outfit/css/themes/dark.css'); return false;">Dark</a>
+			<a href="#" onclick="document.getElementById('theme').setAttribute('href','/ProgressBG-Python/outfit/css/themes/light.css'); return false;">Light</a>
+			<a href="#" onclick="document.getElementById('theme').setAttribute('href','/ProgressBG-Python/outfit/css/themes/projector.css'); return false;">Projector</a>
+		</div>
+		<div class="slides">
+<!--
+########################################################
+##################### SLIDES START #####################
+########################################################
+-->
+<section><h1>Strings and Numbers in Python. Simple Expressions</h1></section>
+<section data-transition="zoom">
+	<!-- linkedin badge -->
+	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+	<section class="copyright" data-transition="zoom">
+		<div class="note">
+			<p>Created for</p>
+		</div>
+		<div class="company">
+			<a href="http://progressbg.net/програмиране-с-python-2/">
+			<img style="height:80%" src="/ProgressBG-Python/outfit/images/logos/ProgressBG_logo_529_127.png">
+			</a>
+		</div>
+		<div class="author">
+			<span class="note">Iva E. Popova, 2015-2018,</span>
+			<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+		</div>
+	</section>
+	<section class="copyright" data-transition="zoom" style="margin-top: -2em;">
+		<div class="company">
+			 <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="ivapopova"><a class="LI-simple-link" href='https://bg.linkedin.com/in/ivapopova?trk=profile-badge'>Iva E. Popova on LinkedIn</a></div>
+		</div>
+	</section>	
+</section>
+
+<section><h2>Data Types?</h2>
+	<dl class="fa">
+		<dt>Programming is about manipulating <b>data</b></dt>
+		<dt>Each programming language defines its data types and the corresponding operations which can be performed on each data type.</dt>
+		<dt>In Python, each data type literal is represented as an <b>object</b></dt>		
+	</dl>
+</section>
+
+<section><h2>Number data Types</h2>
+	<section>
+		<dl class="fa">
+			<dt>In Python we can use <span class="keyword">integer</span>, <span class="keyword">floating point</span> and <span class="keyword">complex</span> numbers</dt>
+			<dt>Most arithmetic operations are natively defined in Python.</dt>
+			<dt>More complex math functions are defined in the <a href="https://docs.python.org/3/library/math.html">math module</a></dt>
+		</dl>		
+	</section>
+	<section><h3>integer numbers</h3>
+		<p>we can use positive and negative integers:</p>
+		<pre><code rel="Python" class="python">
+			>>> 42
+			42
+			>>> -42
+			-42			
+		</code></pre>
+	</section>
+	<section><h3>floating point numbers</h3>
+		<p>we can use positive and negative floating point numbers</p>
+		<pre><code rel="Python" class="python">
+			>>> 3.1234
+			3.1234		
+			>>> -0.255
+			-0.255
+			>>> .44
+			0.44
+			>>> -.55
+			-0.55
+			>>>
+		</code></pre>
+	</section>
+	<section><h3>arithmetic operations</h3>
+		<dl class="fa">
+			<dt><a href="https://www.programiz.com/python-programming/operators#arithmetic">Arithmetic operators</a> @programiz.com</dt>
+		</dl>
+		<p class="note">The division operator "<code>/</code>" in python2 returns the integer part(i.e. works like Floor division), while in python3 it returns the float result</p>
+	</section>
+	<section><h3>Example: arithmetic operations</h3>
+		<pre><code rel="Python" class="python">
+				>>> 5-3
+				2
+				>>> 5*3
+				15
+				>>> 5/3
+				1.6666666666666667
+				>>> 5//3
+				1
+				>>> 5%3
+				2
+		</code></pre>
+	</section>
+	<section><h3>Example: python3 vs python2 division</h3>
+		<pre><code rel="Python2" class="python">
+			>>> 5/3
+			1
+		</code></pre>
+		<br>
+		<pre><code rel="Python3" class="python">
+			>>> 5/3
+			1.6666666666666667
+		</code></pre>
+	</section>
+	<section><h3>the <code>math</code> module</h3>
+		<dl class="fa">
+			<dt>math module is native to every python distribution.</dt>
+			<dt>to use its functions you only have to import it in your program:</dt>
+			<pre><code rel="Python" class="python">
+				import math
+				# do something with math
+			</code></pre>
+		</dl>
+	</section>
+	<section><h3>Example: math functions</h3>
+		<pre><code rel="Python" class="python">
+			>>> import math
+			>>>
+			>>> math.pi
+			3.141592653589793
+			>>> math.floor(math.pi)
+			3
+			>>> math.pow(2,3)
+			8.0
+			>>> math.sqrt(9)
+			3.0
+		</code></pre>
+	</section>	
+</section>
+
+<section><h2>Strings in Python</h2>
+	<section><h3>definition</h3>
+		<dl class="fa">
+			<dt>Strings are <b>immutable</b> sequences of Unicode code points.</dt>
+			<dt>Single-line strings literal should be closed in single or double quotes</dt>
+			<dt>Multi-line strings literal should be closed in triple single or double quotes</dt>
+		</dl>
+	</section>
+	<section><h3>Example</h3>
+		<pre><code rel="Python" class="python">
+			>>> "this is a single line string"
+			'this is a single line string'
+
+			>>> 'в който може да има UTF символи'
+			'в който може да има UTF символи'
+
+			>>> 'but can not be spred in multiple lines
+		  File "<stdin>", line 1
+		    'but can not be spred in multiple lines
+		                                         ^
+			SyntaxError: EOL while scanning string literal
+
+			>>> """infact you can -
+			... if you use the triple quotes"""
+			'infact you can - \nif you use the triple quotes'
+		</code></pre>
+	</section>
+	<section><h3>Strings operations</h3>
+		<pre><code rel="Python" class="python">
+			#string concatenation with '+':
+			>>> "ala" + "bala"
+			'alabala
+
+			# string methods:
+			>>> "iva".capitalize()
+			'Iva'
+		</code></pre>
+		<p><a href="https://docs.python.org/3/library/stdtypes.html#string-methods">String Methods @docs.python.org</a></p>
+	</section>
+</section>
+
+
+<!-- <section id="hw">
+	<section><h1>Задачи за упражнения</h1></section>
+	<section id="task1"><h3>%%Task1_Title%%</h3>		
+	</section>	
+</section> -->
+
+<section class="disclaimer" data-background="/ProgressBG-Python/outfit/images/for_slides/the_end_on_sand.jpg">
+	 <p>These slides are based on</p>
+	 <p>customised version of </p>
+	 <p><a href="http://hakim.se/">Hakimel</a>'s <a href="http://lab.hakim.se/reveal-js">reveal.js</a></p>
+	 <p>framework</p>
+</section>
+<!--
+########################################################
+##################### SLIDES END   #####################
+########################################################
+-->
+		</div>
+	</div>
+	<!-- Custom processing -->
+	<script src="/ProgressBG-Python/outfit/js/slides.js"></script>
+	<!-- external scripts -->
+	<script src="/ProgressBG-Python/lib/reveal.js/lib/js/head.min.js"></script>
+	<script src="/ProgressBG-Python/lib/reveal.js/js/reveal.js"></script>
+	 <!-- init reveal -->
+	<script>
+		// Full list of configuration options available at:
+		// https://github.com/hakimel/reveal.js#configuration
+		var highlightjsTabSize = '  ';
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			slideNumber: 'c/t',
+			keyboard: true,
+			history: true,
+			center: true,
+			width: 1024,
+			height: 850,
+			// Bounds for smallest/largest possible scale to apply to content
+			// minScale: .5,
+			maxScale: 1,
+			// slide transition
+			transition: 'concave', // none/fade/slide/convex/concave/zoom
+			// Factor of the display size that should remain empty around the content
+			margin: 0.1,
+			// shift+maous click to zoom in/out element
+			zoomKey: 'ctrl',
+			// theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+			// transition: Reveal.getQueryHash().transition || 'default'
+			// Optional reveal.js plugins
+			dependencies: [
+				{ src: '/ProgressBG-Python/lib/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: '/ProgressBG-Python/lib/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: '/ProgressBG-Python/lib/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: '/ProgressBG-Python/lib/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.configure({tabReplace: highlightjsTabSize}); hljs.initHighlightingOnLoad(); } },
+				{ src: '/ProgressBG-Python/lib/reveal.js/plugin/zoom-js/zoom.js', async: true },
+				{ src: '/ProgressBG-Python/lib/reveal.js/plugin/notes/notes.js', async: true }
+			]
+		});
+	</script>
+</body>
+</html>
