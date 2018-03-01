@@ -216,98 +216,6 @@
 	</section>
 </section>
 
-<section><h2>PIP - the Python Package Manager</h2>
-	<section><h3>Intro</h3>
-		<dl class="fa">
-			<dt><a href="https://pip.pypa.io/en/stable/">pip - The PyPA recommended tool for installing Python packages.</a></dt>
-			<dt><a href="https://pypi.python.org/pypi">PyPI - the Python Package Index</a></dt>
-		</dl>
-	</section>
-	<section style="font-size: 0.8em"><h3>pip basic commands</h3>
-		<dl class="fa">
-			<dt>get help on pip:</dt>
-			<dd class="code">pip help</dd>			
-			<dt>list installed packages:</dt>
-			<dd class="code">pip list</dd>
-			<dt>install a package from PyPI</dt>
-			<dd class="code">pip install package_name</dd>
-			<dt>uninstall a package</dt>
-			<dd class="code">pip uninstall package_name</dd>
-			<dt>list outdated packages:</dt>
-			<dd class="code">pip list --outdated</dd>
-			<dt>upgrade a package</dt>
-			<dd class="code">pip install --upgrade SomePackage</dd>
-
-		</dl>
-	</section>
-</section>
-
-<section><h2>Python Virtual Environments with Pipenv</h2>
-	<section><h3>Virtual environment - What and Why?</h3>
-		<dl class="fa">
-			<dt>A tool to create an isolated Python environment.</dt>
-			<dt>Keep workflows between projects independent.</dt>
-			<dt>Keeps dependency management hell away</dt>
-		</dl>
-	</section>
-	<section><h3>Pipenv - What?</h3>
-		<dl class="fa">
-			<dt>A dependency manager for Python projects</dt>
-			<dt>Functionally similar to npm and other modern package managers.</dt>
-			<dt>It’s the recommended higher-level tool to simplify dependency management</dt>
-		</dl>
-	</section>
-	<section><h3>Pipenv - Install</h3>
-		<pre><code rel="python" class="python">
-			pip install --user pipenv
-		</code></pre>		
-	</section>
-	<section><h3>Pipenv - installing packages for your project</h3>
-		<pre><code rel="Python" class="python">
-			cd myproject
-			pipenv install requests
-		</code></pre><br>
-		<pre><code rel="Output" class="shell">
-			⠋New python executable in /home/nemsys/.local/share/virtualenvs/pipenv_project_1-J3P05F8y/bin/python
-			Installing setuptools, pip, wheel...done.
-
-			Virtualenv location: /home/nemsys/.local/share/virtualenvs/pipenv_project_1-J3P05F8y
-			Creating a Pipfile for this project…
-			...
-			To activate this project's virtualenv, run the following:
- 			$ pipenv shell
-		</code></pre><br>		
-	</section>
-	<section><h3>Pipenv - activate the virtual environment</h3>
-		<pre><code rel="python" class="python">
-			pipenv shell			
-		</code></pre>
-		<p>After that your terminal will start a new session with the new virtualenv loaded</p>
-	</section>
-	<section><h3>Check the installed packages</h3>
-		<pre><code rel="Python" class="python">
-			pip freeze
-		</code></pre>
-	</section>
-	<section><h3>Use the installed module in your program</h3>
-		<p>Write down next code:</p>
-		<pre><code rel="Python" class="python">
-			import requests
-
-			response = requests.get('https://httpbin.org/ip')
-
-			print('Your IP is {0}'.format(response.json()['origin']))
-		</code></pre>
-	</section>
-	<section><h3>Exit the virtual environment</h3>
-		<pre><code rel="Python" class="python">
-			exit
-		</code></pre>
-		<p>Or type <kbd>ctrl-d</kbd></p>
-		<p>Or close your terminal windows :)</p>		
-	</section>
-</section>
-
 <section><h2>Python IDEs and text editors</h2>
 	<section>
 		<dl class="fa">
@@ -354,6 +262,9 @@
 			<a href="images/vsCode/pythonOutputTerminalWhite.png"><img src="images/vsCode/pythonOutputTerminalWhite.png"></a>
 		</dl>
 	</section>	
+	<section><h3>Select Python version</h3>
+		<p><kbd>ctrl+shift+p</kbd> and find <code>Python: Select interpreter</code></p>
+	</section>
 	<section><h3>Useful Keyboard Shortcuts</h3>
 		<table>
 			<tr>
@@ -375,6 +286,154 @@
 	</section>
 </section>
 
+<section><h2>PIP - the Python Package Manager</h2>
+	<section><h3>Intro</h3>
+		<dl class="fa">
+			<dt><a href="https://pip.pypa.io/en/stable/">pip - The PyPA recommended tool for installing Python packages.</a></dt>
+			<dt><a href="https://pypi.python.org/pypi">PyPI - the Python Package Index</a></dt>
+		</dl>
+	</section>
+	<section style="font-size: 0.8em"><h3>pip basic commands</h3>
+		<dl class="fa">
+			<dt>get help on pip:</dt>
+			<dd class="code">pip help</dd>			
+			<dt>list installed packages:</dt>
+			<dd class="code">pip list</dd>
+			<dt>install a package from PyPI</dt>
+			<dd class="code">pip install package_name</dd>
+			<dt>uninstall a package</dt>
+			<dd class="code">pip uninstall package_name</dd>
+			<dt>list outdated packages:</dt>
+			<dd class="code">pip list --outdated</dd>
+			<dt>upgrade a package</dt>
+			<dd class="code">pip install --upgrade SomePackage</dd>
+
+		</dl>
+	</section>
+</section>
+
+<section><h2>Python Virtual Environments with Pipenv</h2>
+	<section><h3>Virtual environment - What and Why?</h3>
+		<dl class="fa">
+			<dt>Many system modules depends on some specific versions of Python's packages - it's not a good idea to pollute your global python environment</dt>
+			<dt>Virtual environments create an isolated Python environment for your project</dt>
+			<dt>Keep workflows between projects independent.</dt>
+			<dt>Keeps dependency management hell away</dt>
+			<dt>There many tools for working with virtual environments in Python</dt>
+		</dl>
+	</section>
+	<section><h3>Pipenv - What?</h3>
+		<dl class="fa">
+			<dt>A dependency manager for Python projects</dt>
+			<dt>Automatically creates and manages a virtualenv for your projects</dt>
+			<dt>Functionally similar to npm and other modern package managers.</dt>
+			<dt>It’s the recommended higher-level tool to simplify dependency management</dt>
+			<dt>Combines the use of pip and virtualenv</dt>
+		</dl>
+	</section>
+	<section><h3>Pipenv - Install</h3>
+		<pre><code rel="python" class="python">
+			pip install --user pipenv
+		</code></pre>		
+	</section>
+	<section><h3>Pipenv - manage virtualenv</h3>
+		<pre><code rel="Bash" class="bash">
+				### Create virtualenv with system Python3:
+				$ pipenv --three
+				Creating a virtualenv for this project…
+
+
+				### Spawn a shell within the virtualenv
+				$ pipenv shell
+				Spawning environment shell...				
+
+				### Exit the virtualenv
+				(course_intro-SmgljMaj) $ exit
+				exit
+				$ 
+
+				### Output virtualenv information
+				$ pipenv --venv
+
+				### Remove the virtualenv
+				$ pipenv --venv
+				Removing virtualenv...
+
+		</code></pre>
+	</section>
+	<section><h3>Pipenv - manage packages for your project</h3>
+		<pre><code rel="Bash" class="bash">		
+			### install package
+			$ pipenv install requests
+			Installing requests…
+
+			### remove package
+			pipenv uninstall requests
+			Uninstalling requests-2.18.4
+		</code></pre><br>			
+	</section>	
+	<section><h3>Check the installed packages</h3>
+		<pre><code rel="Python" class="python">
+			pip freeze
+		</code></pre>
+	</section>
+	<section><h3>Use the installed module in your program</h3>
+		<p>Write down next code:</p>
+		<pre><code rel="Python" class="python">
+			import requests
+
+			response = requests.get('https://httpbin.org/ip')
+
+			print('Your IP is {0}'.format(response.json()['origin']))
+		</code></pre>
+	</section>
+	<section><h3>Exit the virtual environment</h3>
+		<pre><code rel="Python" class="python">
+			exit
+		</code></pre>
+		<p>Or type <kbd>ctrl-d</kbd></p>
+		<p>Or close your terminal windows :)</p>		
+	</section>
+	<section><h3>pipenv with VS Code</h3>
+		<dl class="fa">
+			<dt>get the pipenv venv path:</dt>
+			<pre><code rel="Bash" class="bash">
+				# navigate to project folder			
+				$ cd course_intro
+
+				# get into pipenv shell
+				$ pipenv shell
+				((course_intro-SmgljMaj) ) $
+
+				# get python path
+				which python
+				/home/nemsys/.local/share/virtualenvs/course_intro-SmgljMaj/bin/python
+			</code></pre>
+			<dt>Open VS Code project workspace</dt>
+			<dd><kbd>ctrl+shift+p</kbd> and find <code>Preferences: Open Workspace Settings</code></dd>
+			<dd>search for <code>python.pythonPath</code> in left panel</dd>
+			<dd>click edit icon and "copy to settings</dd>
+			<dd>in the right panel paste the pipenv venv path into the "python.pythonPath" value</dd>
+		</dl>
+	</section>
+	<section><h3></h3>
+		<dl class="fa">
+			<dt>Your workspace settings should look like:</dt>
+			<pre><code rel="JSON" class="json">
+				{
+					"folders": [
+						{
+							"path": "."
+						}
+					],
+					"settings": {
+						"python.pythonPath": "/home/nemsys/.local/share/virtualenvs/course_intro-SmgljMaj/bin/python"
+					}
+				}
+			</code></pre>
+		</dl>
+	</section>
+</section>
 <!-- <section><h2>Set up docker for python</h2>
 	<section><h3>What is docker?</h3>
 	</section>
