@@ -2,6 +2,7 @@ function themeSwitcher(themeName){
     alert("themeSwitcher ON");
     document.getElementById('theme').setAttribute('href','/ProgressBG-Python/lib/reveal.js/css/theme/'+themeName+'.css');
 }
+
 function  PrettyPreCodeTmp(){
     var codeNodes = document.querySelectorAll('pre>code');
 
@@ -24,6 +25,7 @@ function  PrettyPreCodeTmp(){
         codeNodes[i].style.overflow="auto";
     }
 }
+
 function  PrettyPreCode(){
     var codeNodes = document.querySelectorAll('pre>code');
     // console.dir(codeNodes);
@@ -48,5 +50,14 @@ function  PrettyPreCode(){
     }
 }
 
+function autoTitleLinksWrapImages(){
+    var imgs = document.querySelectorAll('.reveal section a>img');
+    for (var i = 0; i < imgs.length; i++) {
+        imgs[i].parentElement.setAttribute("title", "click for bigger image")
+    }
+}
+
+
 PrettyPreCode();
+autoTitleLinksWrapImages();
 
