@@ -361,11 +361,15 @@ section.copyright>.license{
 }
 .reveal section .fontsize_08{
   font-size: 0.8em !important;
-  line-height: 0.8em !important;
+  line-height: 1em !important;
 }
 .reveal section .fontsize_07{
   font-size: 0.7em !important;
-  line-height: 0.7em !important;
+  line-height: 1em !important;
+}
+.reveal section .fontsize_06{
+  font-size: 0.6em !important;
+  line-height: 1em !important;
 }
 .reveal section .fontsize_05{
   font-size: 0.5em !important;
