@@ -47,7 +47,7 @@
 ##################### SLIDES START #####################
 ########################################################
 -->
-<section><h1>Strings and Numbers in Python. Simple Expressions</h1></section>
+<section><h1>Strings and Numbers in Python.<br>Simple Expressions. Variables. Comments.</h1></section>
 <section data-transition="zoom">
 	<!-- linkedin badge -->
 	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
@@ -61,7 +61,7 @@
 			</a>
 		</div>
 		<div class="author">
-			<span class="note">Iva E. Popova, 2015-2018,</span>
+			<span class="note">Iva E. Popova, 2018,</span>
 			<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
 		</div>
 	</section>
@@ -251,6 +251,60 @@
 		</code></pre>
 		<p style="opacity: 0.7; font-size: 0.9em">What a method is will be discussed further!</p>
 		<p>For now, you can try to look at the docs: <a href="https://docs.python.org/3/library/stdtypes.html#string-methods">String Methods @docs.python.org</a></p>
+	</section>
+</section>
+
+<section><h2>Variables</h2>
+	<section><h3>What are they?</h3>
+		<dl class="fa">
+			<dt>A names for "containers" (placed in RAM) in which values can be remembered</dt>
+			<dt>We can <b>set</b> values in a variable, i.e. to <b>write</b> a value into the corresponding container.</dt>
+			<dt>We can <b>get</b> the variable value, i.e. to <b>read</b> the content of the corresponding container</dt>
+		</dl>
+	</section>
+	<section><h3>example</h3>
+		<pre><code rel="Python" class="python">
+			x = 99
+			y = 3,141516
+			first_name = "ada"
+			sur_name = "byron"
+			num_list = [1,2,3]
+
+			print("x = ", x,)
+			print("y = ", y)
+			print("first_name = ", first_name)
+			print("sur_name = ", sur_name)
+			print("num_list = ", num_list)
+		</code></pre>
+	</section>
+	<section><h3>A very simplified view of variables in RAM</h3>
+		<a href="images/python_variables_in_RAM.png"><img src="images/python_variables_in_RAM.png"></a>
+	</section>	
+</section>
+
+<section><h2>Comments</h2>
+	<section><h3>Why to comment our code?</h3>
+		<dl class="fa">
+			<dt>Python interpreter ignores every part of a program, which is marked as a "comment"</dt>
+			<dt>Comments are used to explain and/or summarize a part of our program in a more readable manner</dt>
+			<dt>For debugging purposes - when we need fast to ignore a block of code</dt>
+			<dt>For other meta information about the program (programme name, author, date, etc.)</dt>
+			<dt>A well commented program is more readable and maintainable</dt>
+		</dl>
+	</section>
+	<section><h3>How to comment our code?</h3>
+		<dl class="fa">
+			<dt>Single line comment: <code>#</code></dt>
+			<dd>every line which starts with <code>#</code>(hash tag) is a comment and is ignored py Python interpreter</dd>
+			<pre><code rel="Python" class="python">
+				# this is a just a comment: no print("ada") will happens
+				print("this will be printed, of course") 
+
+				### a more semantic example for comment:
+				# check if a triangle with sides (3,4,5) is a Pythagorean:
+				print(3**2 + 4**2 == 5**2)
+			</code></pre>
+		</dl>
 	</section>
 </section>
 
