@@ -1,0 +1,19 @@
+python simple_plot.py
+python --version
+
+#create virtenv
+pipenv --three
+pipenv shell
+python --version
+
+# install packages
+pipenv install matplotlib
+
+# run again in virtenv:
+python simple_plot.py
+
+# exit virtenv
+exit
+
+# remove virtenv
+pipenv --rm

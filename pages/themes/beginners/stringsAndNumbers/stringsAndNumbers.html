@@ -167,8 +167,6 @@
 			3.0
 		</code></pre>
 	</section>	
-	<section><h3>generate random numbers</h3>
-	</section>
 </section>
 
 <section><h2>Strings in Python</h2>
@@ -179,26 +177,38 @@
 			<dt>Multi-line strings literal should be closed in triple single or double quotes</dt>
 		</dl>
 	</section>
-	<section><h3>Example</h3>
+	<section><h3>Examples</h3>
 		<pre><code rel="Python" class="python">
 			>>> "this is a single line string"
 			'this is a single line string'
 
-			>>> 'в който може да има UTF символи'
-			'в който може да има UTF символи'
+			>>> 'another single line string with UTF charactes like 🍷'
+			'another single line string with UTF charactes like 🍷'
 
 			>>> 'but can not be spred in multiple lines
 		  File "<stdin>", line 1
 		    'but can not be spred in multiple lines
 		                                         ^
-			SyntaxError: EOL while scanning string literal
-
-			>>> """infact you can -
-			... if you use the triple quotes"""
-			'infact you can - \nif you use the triple quotes'
+			SyntaxError: EOL while scanning string literal			
 		</code></pre>
 	</section>
-	<section><h3>Strings operations</h3>
+	<section><h3>Examples</h3>
+		<pre><code rel="Python" class="python">
+			>>> """infact you can -
+			... if you use this triple quotes"""
+			'infact you can - \nif you use this triple quotes'
+
+			>>> '''or this triple quotes
+			... can separate multiline without errors'''
+			'or this triple quotes\ncan separate multiline without errors'
+
+
+		</code></pre>
+	</section>	
+</section>
+
+<section><h2>Strings operations</h2>
+	<section><h3>concatenation</h3>
 		<pre><code rel="Python" class="python">
 			#string concatenation with '+':
 			>>> "ala" + "bala"
@@ -210,14 +220,80 @@
 		</code></pre>
 		<p><a href="https://docs.python.org/3/library/stdtypes.html#string-methods">String Methods @docs.python.org</a></p>
 	</section>
+	<section><h3>repetition</h3>
+
+	</section>
 </section>
 
 
-<!-- <section id="hw">
-	<section><h1>Задачи за упражнения</h1></section>
-	<section id="task1"><h3>%%Task1_Title%%</h3>		
-	</section>	
-</section> -->
+<section id="hw">
+	<h1>Exercises</h1>
+</section>
+<section><h2><b>acad_to_astro_hours.py</b></h2>
+	<section><h3>The problem</h3>
+		<dl class="fa">
+			<dt>Given that</dt>
+			<dd>An astronomical hour consists of 60 minutes</dd>
+			<dd>An academical hour consists of 40 minutes</dd>
+			<dd>For each four academical hours there are 20 minutes brake</dd>
+			<dt>Write a Python program, that will print out how many astronomical hours a python course should take, if it consists of 64 academical hours, including the respective brakes</dt>		
+		</dl>
+		<pre><code rel="Output" class="shell">
+			48.0
+		</code></pre>
+	</section>
+	<!-- <section><h3>solution</h3>
+		<pre><code rel="Python" class="python">
+			# Solution without using variables to store values
+			print((64*40 + 64/4*20)/60)
+
+		</code></pre>
+	</section> -->
+</section>
+
+<section><h2><b>BMI.py</b></h2>
+	<section><h3>The problem</h3>
+		<dl class="fa">
+			<dt>Calculate your body mass index (BMI) with Python, given the formulae:<br>
+			<code class="note">BMI = W / (H*H)</code><br>
+			where:
+			</dt>			
+			<dd>W = weight_in_kilogram</dd>
+			<dd>H = height_in_meters</dd>
+			<dt>Your program should outputs the rounded result (to 2 digits from the decimal point). You can use the python's build-in <a href="https://www.tutorialspoint.com/python/number_round.htm">round()</a> function, like:</dt>
+			<pre><code rel="Python" class="python">
+				>>> round(2.1457, 2)
+				2.15
+
+				>>> round(1.4234,2)
+				1.42
+
+				>>> round(1.4284,2)
+				1.43
+			</code></pre>
+		</dl>
+	</section>
+	<section><h3>BMI Categories</h3>
+		<p class="note">What is your BMI category?</p>
+		<table>
+			<tr><th>BMI</th><th>Category</th></tr>
+			<tr><td>&lt;= 18.5</td><td>Underweight</td></tr>
+			<tr><td>18.5–24.9</td><td>Normal</td></tr>
+			<tr><td>25–29.9</td><td>Overweight</td></tr>
+			<tr><td>&gt;= 30</td><td>Obesity</td></tr>
+		</table>		
+	</section>
+	<!-- <section><h3>solution</h3>
+		<pre><code rel="Python" class="python">
+			# Solution without using variables to store values,
+			# and given that W = 53, H = 1.67:
+			print(round(53/(1.67*1.67), 2)) 
+
+			# 19.0
+		
+		</code></pre>
+	</section> -->
+</section>
 
 <section class="disclaimer" data-background="/ProgressBG-Python/outfit/images/for_slides/the_end_on_sand.jpg">
 	 <p>These slides are based on</p>

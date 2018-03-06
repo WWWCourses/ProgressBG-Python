@@ -1,7 +1,7 @@
 {
 	"folders": [
 		{
-			"path": "."
+			"path": "pages/themes/beginners/courseIntro/examples/my_project"
 		}
 	],
 	"settings": {
@@ -11,59 +11,35 @@
 			// the explore tree
 			"**/node_modules": false,
 		},
-		// editor
-		"editor.formatOnSave": false,
-		"editor.insertSpaces": false,
-		"editor.parameterHints": false,
-		"editor.overviewRulerBorder": false,
-		"editor.hover": false,
-
-		// htmls
-		"html.suggest.angular1": false,
-		"html.suggest.html5": false,
-		// Configures if the built-in HTML language support suggests Ionic tags, properties and values.
-		"html.suggest.ionic": false,
-
+		
 		//python
-		// Path to Python, you can use a custom version of Python by modifying this setting to include the full path.
-		"python.pythonPath": "/usr/bin/python3",
-		// Whether to lint Python files.
+		// "python.venvPath": "~/.virtualenvs/",
+		"python.pythonPath": "/home/nemsys/.virtualenvs/pipenv-python3.6-Ou1FleOV/bin/python3.6",
 		"python.linting.enabled": true,
-		// Whether to lint Python files using pep8
 		"python.linting.pep8Enabled": false,
 		"python.linting.flake8Enabled": true,
-		"python.formatting.provider": "autopep8",
-		
+		// "python.formatting.provider": "autopep8",
+				
 		//git
 		// Whether git is enabled
-		"git.enabled": true,
-		// "emeraldwalk.runonsave": {
-		// 	"commands": [
-		// 		{
-		// 			"match": ".*",
-		// 			"isAsync": true,
-		// 			"cmd": "echo 'I run for all files.'"
-		// 		},
-		// 		{
-		// 			"match": "\\.txt$",
-		// 			"cmd": "echo 'I am a .txt file ${file}.'"
-		// 		},
-		// 		{
-		// 			"match": "\\.js$",
-		// 			"cmd": "echo 'I am a .js file ${file}.'"
-		// 		},
-		// 		{
-		// 			"match": ".*",
-		// 			"cmd": "echo 'I am ${env.USERNAME}.'"
-		// 		}
-		// 	]
-		// }
+		"git.enabled": false,	
+
+		"saveAndRun": {
+			"commands": [				
+				{
+					"match": "\\.py$",
+					// "cmd": "echo 'I am a .py file ${file}.'",
+					"cmd": "clear && python3 ${file}",
+					"useShortcut": false
+				}
+			]
+		},
 
 		"view-in-browser.customBrowser": "chrome",
 		
 		"cSpell.enabled": false,
 		"cSpell.language": "en",
 
-		"workbench.activityBar.visible": false
+		"workbench.activityBar.visible": false		
 	}
 }

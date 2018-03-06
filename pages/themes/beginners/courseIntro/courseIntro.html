@@ -249,6 +249,12 @@
 	<section><h3>Prepare your Workspace</h3>
 		<p>Your Workspace should look like: </p>
 		<a href="images/vsCode/PrepareWorkspaceWhite.png"><img src="images/vsCode/PrepareWorkspaceWhite.png"></a>
+	</section>	
+	<section><h3>Workspace settings</h3>
+		<dl class="fa">
+			<dt>Press <kbd>CTRL+SHIFT+P</kbd> and type <code>Workspace Settings</code></dt>
+			<dt>Here you can change the default settings, as you wish in order to customize your experience with your project</dt>			
+		</dl>
 	</section>
 	<section><h3>Create and execute a Python file</h3>
 		<dl class="fa">
@@ -265,7 +271,7 @@
 	<section><h3></h3>
 		<dl class="fa">
 			<dt>A terminal panel should be opened in your editor showing the python script execution and its output:</dt>
-			<a href="images/vsCode/pythonOutputTerminalWhite.png"><img src="images/vsCode/pythonOutputTerminalWhite.png"></a>
+			<a href="images/vsCode/CreateAndExecutePythohnFile.gif"><img src="images/vsCode/CreateAndExecutePythohnFile.gif"></a>
 		</dl>
 	</section>	
 	<section><h3>Select Python version</h3>
@@ -277,11 +283,15 @@
 				<th>Keys</th><th>Action</th>
 			</tr>
 			<tr>
+				<td><kbd>ctrl+s</kbd></td><td>Save file</td>
+			</tr>
+			<tr>
 				<td><kbd>ctrl+shift+p</kbd></td><td>Opens Command Palette</td>	
 			</tr>
 			<tr>
 				<td><kbd>ctrl+`</kbd></td><td>Toggle Terminal/Output panel</td>
 			</tr>
+			<tr><td><kbd>ctrl+l</kbd></td><td>While in terminal will clear the output</td></tr>
 		</table>
 		<p class="note">Command Palette gives you access to all VS commands in the given context.</p>
 	</section>
@@ -319,24 +329,29 @@
 </section>
 
 <section><h2 class="advanced">Python Virtual Environments with Pipenv</h2>
-	<section><h3>Virtual environment - What and Why?</h3>
+	<section><h3>Virtual environment - Why?</h3>
 		<dl class="fa">
-			<dt>Many system modules depends on some specific versions of Python's packages - it's not a good idea to pollute your global python environment</dt>
+			<dt>Python apps usually depends on many modules(packages), which depends on other packages, and very often - from a specific version of a package.</dt>
+			<dt>Many system tools also depends on specific versions of installed Python packages</dt>
+			<dt>You don't want to pollute your Python environment!</dt>			
+		</dl>
+	</section>
+	<section><h3>Virtual environment - What?</h3>
+		<dl class="fa">
 			<dt>Virtual environments create an isolated Python environment for your project</dt>
 			<dt>Keep workflows between projects independent.</dt>
-			<dt>Keeps dependency management hell away</dt>
-			<dt>There many tools for working with virtual environments in Python</dt>
+			<dt>Keeps <a href="https://medium.com/knerd/the-nine-circles-of-python-dependency-hell-481d53e3e025" class="advanced">dependency hell</a> away</dt>
+			<dt>There are many tools for working with virtual environments in Python (virtualenv, pyenv, venv, virtualenvwrapper)</dt>
 		</dl>
 	</section>
 	<section><h3>Pipenv - What?</h3>
 		<dl class="fa">
-			<dt>A dependency manager for Python projects</dt>
+			<dt>A dependency and virtual environments manager combined into one</dt>
 			<dt>Automatically creates and manages a virtualenv for your projects</dt>
-			<dt>Functionally similar to npm and other modern package managers.</dt>
-			<dt>It’s the recommended higher-level tool to simplify dependency management</dt>
-			<dt>Combines the use of pip and virtualenv</dt>
+			<dt>The officially recommended Python packaging tool from Python.org.</dt>
+			<dt>Functionally similar to npm and other modern package managers.</dt>						
 		</dl>
-	</section>
+	</section>	
 	<section><h3>Pipenv - Install</h3>
 		<pre><code rel="python" class="python">
 			pip install --user pipenv
@@ -362,7 +377,7 @@
 				$ pipenv --venv
 
 				### Remove the virtualenv
-				$ pipenv --venv
+				$ pipenv --rm
 				Removing virtualenv...
 
 		</code></pre>
@@ -406,6 +421,25 @@
 		</code></pre>
 		<p>Or type <kbd>ctrl-d</kbd></p>
 		<p>Or close your terminal windows :)</p>		
+	</section>
+	<section><h3>Example: simple_plot with matplotlib</h3>
+		<p>The code for simple plot example is:</p>
+		<pre><code rel="Python" class="python">
+			import matplotlib.pyplot as plt
+			import numpy as np
+
+			t = np.arange(0.0, 2.0, 0.01)
+			s = 1 + np.sin(2*np.pi*t)
+			plt.plot(t, s)
+
+			plt.xlabel('time (s)')
+			plt.ylabel('voltage (mV)')
+			plt.title('About as simple as it gets, folks')
+			plt.grid(True)
+			plt.savefig("test.png")
+			plt.show()
+		</code></pre>
+		<p>We will install the required modules by pipenv</p>
 	</section>
 	<section><h3>pipenv with VS Code</h3>
 		<dl class="fa">
