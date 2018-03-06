@@ -1,0 +1,11 @@
+{
+	"settings": {
+		"python.pythonPath": "/usr/bin/python3.6",
+		"cSpell.enabled": false
+	},
+	"folders": [
+		{
+			"path": "."
+		}
+	]
+}
