@@ -140,6 +140,9 @@
 		<pre><code rel="Python3" class="python">
 			>>> 5/3
 			1.6666666666666667
+
+			>>> 5//3
+			1
 		</code></pre>
 		<p class="note">Python3 adds the "<code>//</code>" operator for Integer division</p>
 	</section>
@@ -172,7 +175,7 @@
 <section><h2>Strings in Python</h2>
 	<section><h3>definition</h3>
 		<dl class="fa">
-			<dt>Strings are <b>immutable</b> sequences of Unicode code points.</dt>
+			<dt>Strings are <b>immutable</b> sequences of Unicode code points <span style="font-size: 0.8em">(will be discussed further)</span>.</dt>
 			<dt>Single-line strings literal should be closed in single or double quotes</dt>
 			<dt>Multi-line strings literal should be closed in triple single or double quotes</dt>
 		</dl>
@@ -195,12 +198,12 @@
 	<section><h3>Examples</h3>
 		<pre><code rel="Python" class="python">
 			>>> """infact you can -
-			... if you use this triple quotes"""
-			'infact you can - \nif you use this triple quotes'
+			... if you use these triple quotes"""
+			'infact you can - \nif you use these triple quotes'
 
-			>>> '''or this triple quotes
+			>>> '''or these triple quotes
 			... can separate multiline without errors'''
-			'or this triple quotes\ncan separate multiline without errors'
+			'or these triple quotes\ncan separate multiline without errors'
 
 
 		</code></pre>
@@ -209,7 +212,7 @@
 
 <section><h2>Strings operations</h2>
 	<section><h3>concatenation: <code>+</code></h3>
-		<p>The operation is defined only on string operands:</p>
+		<p>The operation is defined only on <span class="note">string operands</span>:</p>
 		<pre><code rel="Python" class="python">
 			#string concatenation with '+':
 			>>> "ala" + "bala"
@@ -224,7 +227,7 @@
 		</code></pre>		
 	</section>
 	<section><h3>repetition: <code>*</code></h3>
-		<p>One of the operands must be string, the other - integer</p>
+		<p>One of the operands must be <span class="note">string</span>, the other - <span class="note">integer</span></p>
 		<pre><code rel="Python" class="python">
 			>>> "-" * 10
 			'----------'
@@ -246,7 +249,8 @@
 			>>> "iva".capitalize()
 			'Iva'
 		</code></pre>
-		<p><a href="https://docs.python.org/3/library/stdtypes.html#string-methods">String Methods @docs.python.org</a></p>
+		<p style="opacity: 0.7; font-size: 0.9em">What a method is will be discussed further!</p>
+		<p>For now, you can try to look at the docs: <a href="https://docs.python.org/3/library/stdtypes.html#string-methods">String Methods @docs.python.org</a></p>
 	</section>
 </section>
 
@@ -257,10 +261,10 @@
 <section><h2><b>acad_to_astro_hours.py</b></h2>
 	<section><h3>The problem</h3>
 		<dl class="fa">
-			<dt>Given that</dt>
+			<dt>Given that:</dt>
 			<dd>An astronomical hour consists of 60 minutes</dd>
 			<dd>An academical hour consists of 40 minutes</dd>
-			<dd>For each four academical hours there are 20 minutes brake</dd>
+			<dd>For each 4 academical hours there are 20 minutes brake</dd>
 			<dt>Write a Python program, that will print out how many astronomical hours a python course should take, if it consists of 64 academical hours, including the respective brakes</dt>		
 		</dl>
 		<pre><code rel="Output" class="shell">
