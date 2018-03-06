@@ -1,5 +1,9 @@
 {
-	"folders": [],
+	"folders": [
+		{
+			"path": "."
+		}
+	],
 	"settings": {
 		"files.exclude": {
 			// this excludes all folders 
@@ -22,7 +26,6 @@
 
 		//python
 		// "python.venvPath": "~/.virtualenvs/",
-		"python.pythonPath": "/home/nemsys/.virtualenvs/pipenv-python3.6-Ou1FleOV/bin/python3.6",
 		"python.linting.enabled": true,
 		"python.linting.pep8Enabled": false,
 		"python.linting.flake8Enabled": true,
@@ -48,6 +51,7 @@
 		"cSpell.enabled": false,
 		"cSpell.language": "en",
 
-		"workbench.activityBar.visible": false		
+		"workbench.activityBar.visible": false,
+		"python.pythonPath": "/usr/bin/python3.6"
 	}
 }

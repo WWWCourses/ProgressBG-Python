@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>variablesAndBasicIO</title>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+	<!-- css & themes include -->
+	<link rel="stylesheet" href="/ProgressBG-Python/lib/reveal.js/css/reveal.css">
+	<link rel="stylesheet" href="/ProgressBG-Python/outfit/css/themes/light.css" id="theme">
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? '/ProgressBG-Python/lib/reveal.js/css/print/pdf.css' : '/ProgressBG-Python/lib/reveal.js/css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+
+	<!-- CUSTOM -->	
+	<base target="_blank">
+</head>
+<body>
+	<div class="reveal default center" data-transition-speed="default" data-background-transition="default">
+		<div class="top_links">
+			<a class="home_link" href="/ProgressBG-Python/pages/agenda/agenda.html#variablesAndBasicIO" target="_top"><i class="fa fa-home"></i></a>
+			<span class="help_link" href="#"><i class="fa fa-question"></i></span>
+			<div class="help_text">
+				<div><span>N/Спейс</span><span>следващ слайд</span></div>
+				<div><span>P</span><span>предишен слайд</span></div>
+				<div><span>O</span><span>всички слайдове</span></div>
+				<div><span>ctrl+left click</span><span>увеличава елемента</span></div>
+			</div>
+		</div>
+		<div class="footer theme_switch">
+			<a href="#" onclick="document.getElementById('theme').setAttribute('href','/ProgressBG-Python/outfit/css/themes/dark.css'); return false;">Dark</a>
+			<a href="#" onclick="document.getElementById('theme').setAttribute('href','/ProgressBG-Python/outfit/css/themes/light.css'); return false;">Light</a>
+			<a href="#" onclick="document.getElementById('theme').setAttribute('href','/ProgressBG-Python/outfit/css/themes/projector.css'); return false;">Projector</a>
+		</div>
+		<div class="slides">
+<!--
+########################################################
+##################### SLIDES START #####################
+########################################################
+-->
+<section><h1>Variables in Python. Basic IO and string formatting</h1></section>
+<section data-transition="zoom">
+	<!-- linkedin badge -->
+	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+	<section class="copyright" data-transition="zoom">
+		<div class="note">
+			<p>Created for</p>
+		</div>
+		<div class="company">
+			<a href="http://progressbg.net/програмиране-с-python-2/">
+			<img style="height:80%" src="/ProgressBG-Python/outfit/images/logos/ProgressBG_logo_529_127.png">
+			</a>
+		</div>
+		<div class="author">
+			<span class="note">Iva E. Popova, 2015-2018,</span>
+			<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+		</div>
+	</section>
+	<section class="copyright" data-transition="zoom" style="margin-top: -2em;">
+		<div class="company">
+			 <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="ivapopova"><a class="LI-simple-link" href='https://bg.linkedin.com/in/ivapopova?trk=profile-badge'>Iva E. Popova on LinkedIn</a></div>
+		</div>
+	</section>	
+</section>
+
+<section><h2>Variables</h2>
+	<section><h3>What are they?</h3>
+		<dl class="fa">
+			<dt>A names for "containers" (placed in RAM) in which values can be remembered</dt>
+			<dt>We can <b>set</b> values in a variable, i.e. to <b>write</b> a value into the corresponding container.</dt>
+			<dt>We can <b>get</b> the variable value, i.e. to <b>read</b> the content of the corresponding container</dt>
+		</dl>
+	</section>
+	<section><h3>example</h3>
+		<pre><code rel="Python" class="python">
+			x = 99
+			y = 3,141516
+			first_name = "ada"
+			sur_name = "byron"
+			num_list = [1,2,3]
+
+			print("x = ", x,)
+			print("y = ", y)
+			print("first_name = ", first_name)
+			print("sur_name = ", sur_name)
+			print("num_list = ", num_list)
+		</code></pre>
+	</section>
+	<section><h3>A very simplified view of variables in RAM</h3>
+		<a href="images/python_variables_in_RAM.png"><img src="images/python_variables_in_RAM.png"></a>
+	</section>	
+</section>
+
+<section><h2>Basic IO - User input</h2>
+	<section><h3>the raw_input() function - <span class="note">Python2 way</span></h3>
+		<p>Allows to prompt the user to enter some value.</p>
+		<pre><code rel="Syntax" class="python">
+			variable = raw_input("prompt message, to be displayed to the user: ")
+		</code></pre>
+		<br>
+		<pre><code rel="Python2" class="python">
+			>>> user_input = raw_input("enter some value: ")
+			enter some value: iva
+
+			>>> print user_input
+			iva
+
+			>>> print type(user_input)
+			&lt;type 'str'&gt;			
+		</code></pre>		
+	</section>	
+	<section><h3>the input() function - <span class="note">Python3 way</span></h3>
+		<p>Allows to prompt the user to enter some value.</p>
+		<pre><code rel="Syntax" class="python">
+			variable = raw_input("prompt message, to be displayed to the user: ")
+		</code></pre>
+		<br>
+		<pre><code rel="Python3" class="python">
+			>>> user_input = input("enter some value: ")
+			enter some value: 42
+
+			>>> print(user_input)
+			42
+
+			>>> print(type(user_input))
+			&lt;class 'str'&gt;			
+		</code></pre>
+		<p class="note">Note, that no matter what value the user entered, it will be stored as a string!</p>		
+	</section>	
+	<section><h3>Examples (python3)</h3>
+		<pre><code rel="Python" class="python">
+			user_name = input("hi, what's your name: ")
+			user_surname = input("will you tell me your sur name?:")
+
+			print("Nice to meet you, ", user_name.capitalize() + " " + user_surname.capitalize() + "!")
+		</code></pre>
+	</section>
+</section>
+
+<section><h2>Formatting strings</h2>
+	<section><h3>Why and How?</h3>
+		<dl class="fa">
+			<dt>It is not convenient to use the concatenation operator when we want to display some message and some variables interpolated into it.</dt>
+			<dt>Python <span class="note">do not support variables interpolation</span> like in bash/Perl/PHP/...</dt>
+			<pre><code rel="Terminal" class="shell">
+				# not possible in Python!!!
+				$name = "Iva";
+				print("Hello $name !")
+					Hello Iva !			
+			</code></pre>
+		</dl>
+	</section>
+	<section><h3>printf-style String Formatting in Python</h3>
+		<a href="https://docs.python.org/3.6/library/stdtypes.html#old-string-formatting">Python String format()</a>
+		<pre><code rel="Python" class="python">
+			name="Ada"
+			sur_name="Byron"
+
+			print("Nice to meet you %s %s !" % (name, sur_name))
+		</code></pre>
+	</section>
+	<section><h3>printf-style String Formatting in Python - examples</h3>
+		<pre><code rel="Python" class="python">
+			x = 1.2345678
+			y = 123
+			print("x = %d, y = %d" % (x,y))
+			print("x = %02d, y = %02d" % (x,y))
+			print("x = %f, y = %f" % (x, y))
+			print("x = %.2f, y = %.2f" % (x, y))
+		</code></pre>
+	</section>
+	<section><h3>printf-style String Formatting in Python - resources</h3>
+		<dl class="fa">
+			<dt><a href="https://www.python-course.eu/python3_formatted_output.php">Formatted Output @python-course.eu </a></dt>
+			<dt><a href="https://docs.python.org/3.6/library/stdtypes.html#old-string-formatting" class="advanced">printf-style String Formatting @docs.python.org/3.6 </a></dt>
+		</dl>
+	</section>
+	<section><h3>format string syntax: <code>str.format()</code> method - resources</h3>
+		<dl class="fa">
+			<dt><a href="https://www.programiz.com/python-programming/methods/string/format">Python String format() @programiz.com</a></dt>
+			<dt><a href="https://docs.python.org/3.6/library/string.html#formatstrings">Format String Syntax @docs.python.org/3.6</a></dt>
+		</dl>		
+	</section>
+	<section><h3>format string syntax: <code>str.format()</code> method - examples</h3>
+		<pre><code rel="Python" class="python">
+				user_name = input("hi, what's your name: ")
+				user_surname = input("will you tell me your sur name?:")
+
+				print("Nice to meet you, {} {} !".
+					format(user_name.capitalize(), user_surname.capitalize()))
+		</code></pre>
+	</section>
+</section>
+
+
+<!-- <section id="hw">
+	<section><h1>Задачи за упражнения</h1></section>
+	<section id="task1"><h3>%%Task1_Title%%</h3>		
+	</section>	
+</section> -->
+
+<section class="disclaimer" data-background="/ProgressBG-Python/outfit/images/for_slides/the_end_on_sand.jpg">
+	 <p>These slides are based on</p>
+	 <p>customised version of </p>
+	 <p><a href="http://hakim.se/">Hakimel</a>'s <a href="http://lab.hakim.se/reveal-js">reveal.js</a></p>
+	 <p>framework</p>
+</section>
+<!--
+########################################################
+##################### SLIDES END   #####################
+########################################################
+-->
+		</div>
+	</div>
+	<!-- Custom processing -->
+	<script src="/ProgressBG-Python/outfit/js/slides.js"></script>
+	<!-- external scripts -->
+	<script src="/ProgressBG-Python/lib/reveal.js/lib/js/head.min.js"></script>
+	<script src="/ProgressBG-Python/lib/reveal.js/js/reveal.js"></script>
+	 <!-- init reveal -->
+	<script>
+		// Full list of configuration options available at:
+		// https://github.com/hakimel/reveal.js#configuration
+		var highlightjsTabSize = '  ';
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			slideNumber: 'c/t',
+			keyboard: true,
+			history: true,
+			center: true,
+			width: 1024,
+			height: 850,
+			// Bounds for smallest/largest possible scale to apply to content
+			// minScale: .5,
+			maxScale: 1,
+			// slide transition
+			transition: 'concave', // none/fade/slide/convex/concave/zoom
+			// Factor of the display size that should remain empty around the content
+			margin: 0.1,
+			// shift+maous click to zoom in/out element
+			zoomKey: 'ctrl',
+			// theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+			// transition: Reveal.getQueryHash().transition || 'default'
+			// Optional reveal.js plugins
+			dependencies: [
+				{ src: '/ProgressBG-Python/lib/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: '/ProgressBG-Python/lib/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: '/ProgressBG-Python/lib/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: '/ProgressBG-Python/lib/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.configure({tabReplace: highlightjsTabSize}); hljs.initHighlightingOnLoad(); } },
+				{ src: '/ProgressBG-Python/lib/reveal.js/plugin/zoom-js/zoom.js', async: true },
+				{ src: '/ProgressBG-Python/lib/reveal.js/plugin/notes/notes.js', async: true }
+			]
+		});
+	</script>
+</body>
+</html>
