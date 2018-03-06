@@ -397,6 +397,10 @@
 		<pre><code rel="Python" class="python">
 			pip freeze
 		</code></pre>
+		<p>or...</p>
+		<pre><code rel="Python" class="python">
+			pipenv graph
+		</code></pre>
 	</section>
 	<section><h3>Use the installed module in your program</h3>
 		<dl class="fa">
@@ -421,9 +425,15 @@
 		</code></pre>
 		<p>Or type <kbd>ctrl-d</kbd></p>
 		<p>Or close your terminal windows :)</p>		
-	</section>
+	</section>	
+</section>
+
+<section><h2 class="advanced">pipenv - examples</h2>
 	<section><h3>Example: simple_plot with matplotlib</h3>
-		<p>The code for simple plot example is:</p>
+		<dl class="fa">
+			<dt>create the file "simple_plot.py" in your project root folder</dt>
+			<dt>Enter in it the code bellow:</dt>
+		</dl>
 		<pre><code rel="Python" class="python">
 			import matplotlib.pyplot as plt
 			import numpy as np
@@ -438,23 +448,82 @@
 			plt.grid(True)
 			plt.savefig("test.png")
 			plt.show()
+		</code></pre>	
+		<p class="smallest">example from: <a href="https://matplotlib.org/examples/pylab_examples/simple_plot.html">matplotlib.org</a></p>	
+	</section>	
+	<section><h3>Example: simple_plot with matplotlib</h3>
+		<dl class="fa">
+			<dt>Open a terminal window and navigate to your project root folder</dt>
+			<dt>Make sure you are in it:</dt>					
+		</dl>
+		<pre><code rel="Terminal" class="shell">
+			# navigate...
+			$ cd your/project/root/folder
+
+			# make sure you are in it - get your current working directory:
+			$ pwd
+			your/project/root/folder
 		</code></pre>
-		<p>We will install the required modules by pipenv</p>
+	</section>
+	<section><h3>Example: simple_plot with matplotlib</h3>
+		<p>try to run the simple_plot.py program</p>
+		<pre><code rel="Terminal" class="bash">			
+			$ python simple_plot.py
+			Traceback (most recent call last):
+			  File "simple_plot.py", line 1, in &lt;module&gt;
+			    import matplotlib.pyplot as plt
+			ImportError: No module named matplotlib.pyplot
+		</code></pre>
+		<p>Yes, an error occurs, because we do not have the required module (matplotlib) installed</p>		
+	</section>
+	<section><h3>Example: simple_plot with matplotlib</h3>
+		<p class="note">We will install the required modules in a safe virtual environment by pipenv!</p>
+		<pre><code rel="Terminal" class="bash">
+			# install packages safely with pipenv:
+			$ pipenv install matplotlib
+			Creating a virtualenv for this project…
+			...
+			To activate this project's virtualenv, run the following
+			  $ pipenv shell
+		</code></pre>
+	</section>
+	<section><h3>Example: simple_plot with matplotlib</h3>
+		<dl class="fa">
+			<dt>Activate the virtual environment:</dt>
+			<pre><code rel="Terminal" class="bash">
+				$ pipenv shel
+				  Spawning environment shell...
+			</code></pre>
+		</dl>
+	</section>
+	<section><h3>Example: simple_plot with matplotlib</h3>
+		<dl class="fa">
+			<dt>Try to run the simple_plot.py program now:</dt>
+			<pre><code rel="Terminal" class="bash">
+				python simple_plot.py 
+			</code></pre>
+			<dt>It should run now - a windows with simple plots wil be opened: <br>
+				<a href="images/simple_plot.py_output.png"><img src="images/simple_plot.py_output.png"></a>
+			</dt>
+		</dl>
+	</section>
+	<section><h3>Example: simple_plot with matplotlib - as gif</h3>
+		<a href="images/pipenv/matplotlib_in_pipenv_croped.gif"><img src="images/pipenv/matplotlib_in_pipenv_croped.gif"></a>
 	</section>
 	<section><h3>pipenv with VS Code</h3>
 		<dl class="fa">
 			<dt>get the pipenv venv path:</dt>
 			<pre><code rel="Bash" class="bash">
 				# navigate to project folder			
-				$ cd course_intro
+				$ cd your/root/project/folder
 
 				# get into pipenv shell
 				$ pipenv shell
-				(course_intro-SmgljMaj) $
+				(my_project-hUoR8K1v)) $
 
 				# get python path
-				which python
-				/home/nemsys/.local/share/virtualenvs/course_intro-SmgljMaj/bin/python
+				$ which python
+					/home/nemsys/.local/share/virtualenvs/my_project-hUoR8K1v/bin/python
 			</code></pre>
 			<dt>Open VS Code project workspace</dt>
 			<dd><kbd>ctrl+shift+p</kbd> and find <code>Preferences: Open Workspace Settings</code></dd>
@@ -463,7 +532,7 @@
 			<dd>in the right panel paste the pipenv venv path into the "python.pythonPath" value</dd>
 		</dl>
 	</section>
-	<section><h3></h3>
+	<section><h3>pipenv with VS Code</h3>
 		<dl class="fa">
 			<dt>Your workspace settings should look like:</dt>
 			<pre><code rel="JSON" class="json">
@@ -474,13 +543,17 @@
 						}
 					],
 					"settings": {
-						"python.pythonPath": "/home/nemsys/.local/share/virtualenvs/course_intro-SmgljMaj/bin/python"
+						"python.pythonPath": "/home/nemsys/.local/share/virtualenvs/my_project-hUoR8K1v/bin/python"
 					}
 				}
 			</code></pre>
 		</dl>
 	</section>
+	<section><h3>pipenv with VS Code - as gif</h3>
+		<a href="images/vsCode/run_pipenved_app_in_vscode.gif"><img src="images/vsCode/run_pipenved_app_in_vscode.gif"></a>
+	</section>
 </section>
+
 <!-- <section><h2>Set up docker for python</h2>
 	<section><h3>What is docker?</h3>
 	</section>
