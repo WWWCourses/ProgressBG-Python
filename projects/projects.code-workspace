@@ -1,6 +1,6 @@
 {
 	"settings": {
-		"python.pythonPath": "/usr/bin/python3.6",
+		"python.pythonPath": "/home/nemsys/.local/share/virtualenvs/ProgressBG-Python-WYUS3Dhu/bin/python",
 		"cSpell.enabled": false
 	},
 	"folders": [
