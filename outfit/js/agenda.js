@@ -17,7 +17,6 @@ function attachEvents(){
 
         // animate slides icon to grab attention:
         themeItem.addEventListener( "mouseover", function(){
-            // console.log("mouseon:", this);
             grabAttnetion(this.querySelector("a.ready"));
         } );
         themeItem.addEventListener( "mouseout", function(){
