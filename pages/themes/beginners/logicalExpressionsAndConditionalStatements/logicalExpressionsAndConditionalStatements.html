@@ -180,7 +180,7 @@
 		<dl class="fa">
 			<dt>With Comparison Operations we can check if 2 or more values are equal or if a value is less than other, and so on.</dt>
 			<dt>The result of a Comparison Operation is True/False</dt>
-			<dt class="note">Comparing objects of different types, except different numeric, will raise a TypeError!</dt>
+			<dt class="note">Comparing objects of different types, except different numeric, will raise a TypeError! Python do not want to compare "apples" with "oranges", as other languages do.</dt>
 		</dl><br><br>
 		<pre><code rel="Python" class="python">
 			>>> 2 < 1
@@ -231,22 +231,184 @@
 		<p class="note">Objects identity will be discussed in the OOP part of the course.</p>
 	</section>
 	<section><h3>examples</h3>
-
+		<pre><code rel="Python" class="python">
+			>>> i = 5
+			>>> i < 5
+			False
+			>>> i <= 5
+			True
+			>>> 9 < 1000
+			True
+			>>> "9" < "1000"
+			False
+		</code></pre>
+		<p class="note">Note, the last example: <code>"9" < "1000"</code>, the result is False, because strings are compared lexicographically.</p>
 	</section>
-	<section>
-		<a href="https://docs.python.org/3/library/stdtypes.html#stdcomparisons">Comparisons @docs.python.org</a>
+	<section><h3>lexicographical comparison</h3>
+			<dl class="fa">
+				<dt>Symbols are compared by their position (codepoint) according to the character code table used.</dt>
+				<dt>First the first two items are compared, and if they differ this determines the outcome of the comparison.If they are equal, the next two items are compared, and so on, until either sequence is exhausted.</dt>
+			</dl>					 
+	</section>
+	<section><h3>So, why  "9" < "1000" returns False?</h3>		
+			<p>If we use the <a href="https://ascii.cl/">ASCII Codes Table</a>, we see that the ASCII code point for "9" is 57, and for "1" - 49.</p>
+			<p>So, Python compares <code>57 < 49</code></p>
+	</section>	
+</section>
+
+<section><h2>Control Flow Statements</h2>
+	<section><h3>What?</h3>
+		<dl class="fa">
+			<dt>The Control Flow statements allows our program to react in one way, if some <span class="note">condition</span> is True, or in another way, if it's False.</dt>
+		</dl>
+	</section>
+	<section><h3>Normal Control Flow</h3>
+		<p>Statements are executed one after another, as written in code.</p>
+		<a href="images/NormalControlFlow.png"><img src="images/NormalControlFlow.png"></a>
+	</section>	
+</section>
+
+<section><h2><code class="note">if</code> statement</h2>
+	<section><h3>Syntax</h3>
+		<a href="images/ifFlow.png"><img src="images/ifFlow.png"></a>	
+		<dl class="fa">
+			<dt><span class="note">Condition</span> can be any expression, which could be evaluated to <span class="note">True/False</span></dt>
+		</dl>	<br><br>	
+		<pre><code rel="Syntax" class="shell">
+			if condition :
+				block 1			
+		</code></pre><br>
+		<p class="note">In Python, to encompass the statements which forms a block, you do not need to put any braces, but each statement have to be indented with the same amount of spaces!</p>
+	</section>
+	<section><h3>example</h3>
+		<pre><code rel="Python" class="python">
+			x = 42
+			if ( x % 2 == 0):
+			    print("{} is an even number!".format(x))
+		</code></pre>
+	</section>
+	<section><h3>example - align matters</h3>
+		<pre><code rel="Python" class="python">
+			if False :
+				print("Statement1")
+			  print("Statement2")
+			print("Statement3")
+		</code></pre><br>
+		<dl class="fa">
+			<dt>Statement1 and Statement2 forms a block, which will be executed, <span class="note">only if the condition is true</span>. This is not the case in example above, that's why only Statement3 will be executed.</dt>
+		</dl>
 	</section>
 </section>
 
-<section><h2>Control Flow</h2>
-	<section><h3>if:elif:else statements.</h3>
-		<a href="https://docs.python.org/3/tutorial/controlflow.html">More Control Flow Tools</a>
+<section><h2><code class="note">if - else</code> statement</h2>
+	<section><h3>Syntax</h3>
+		<pre><code rel="Syntax" class="shell">
+			if condition :
+				block 1	
+			else :
+				block 2		
+		</code></pre><br>		
+	</section>
+	<section><h3>Flow</h3>
+		<a href="images/if-elseFlow.png"><img src="images/if-elseFlow.png"></a>	
+	</section>
+	<section><h3>example - even/odd number</h3>
+		<pre><code rel="Python" class="python">
+			x = 41
+			if (x % 2 == 0):
+				print("{} is an EVEN number!".format(x))
+			else:
+			  print("{} is an ODD number!".format(x))
+		</code></pre><br>
+		<pre><code rel="Output" class="shell">
+			41 is an ODD number!
+		</code></pre>
+	</section>
+	<section><h3>example - hello in BG</h3>
+		<pre><code rel="Python" class="python">
+			user_lang = "bg"
+			if user_lang == "bg":
+			    print("Здравейте")
+			else:
+			    print("Hello")
+			print("-" * 20)
+		</code></pre><br>
+		<pre><code rel="Output" class="shell">
+			Здравейте
+			--------------------
+		</code></pre>
+	</section>
+</section>
+
+<section><h2><code class="note">if - elif - else</code> statement</h2>
+	<section><h3>Syntax</h3>
+		<pre><code rel="Syntax" class="shell">
+			if c1 :
+				block 1	
+			elif c2:
+				block 2	
+			else:
+				block 3
+		</code></pre><br>	
+		<dl class="fa">
+				<dt><span class="note">We can have more than one elif statement</span>, as shown in next examples!</dt>
+			</dl>	
+	</section>
+	<section><h3>Flow</h3>
+		<a href="images/if-elif-elseFlow.png"><img src="images/if-elif-elseFlow.png"></a>	
+	</section>
+	<section><h3>example - multinational hello</h3>
+		<pre><code rel="Python" class="python">
+			user_lang = "it"
+			if user_lang == "bg":
+			    print("Здравейте")
+			elif user_lang == "it":
+			    print("Ciao")
+			elif user_lang == "en":
+			    print("Hello")
+			else:
+			    print("I do not speak your language!")
+			print("-" * 20)
+		</code></pre>
 	</section>
 </section>
 
 <section id="hw">
 	<h1>Exercises</h1>
-	<section><h2>Guess the number game</h2></section>
+	<section><h2>odd_or_even.py</h2>
+		<dl class="fa">
+			<dt>Write a program, which will print out for any integer number if it is odd or even.</dt>
+			<dt class="note">Be careful with the zero!</dt>
+		</dl>
+	</section>
+	<section><h3>The BMI by categories</h3>
+		<dl class="fa">
+			<dt>Refine the BMI program form the (<a href="https://wwwcourses.github.io/ProgressBG-Python/pages/themes/beginners/stringsNumbersVariablesComments/stringsNumbersVariablesComments.html#/10">last lab</a>)</dt>
+			<dt>Now, the output of your program should be the BMI category, corresponding to the BMI index</dt>
+		</dl>
+	</section>
+	<section style="font-size: 0.8em"><h2>Guess the number game - the beggining</h2>
+		<dl class="fa">
+			<dt>Write a simple Python program, implementing the "Guess the number" game, following the rules:</dt>
+			<dd>The program will "think" of a number using the <code>random module</code>, as shown in code shown in next slide.</dd>
+			<dt>You have to implement now only the first user move:</dt>
+			<dd>Prompt the user for his/her guess</dd>
+			<dd>If the user guess is equal to the machine number, the print out a congratulation message!</dd>
+			<dd>If the user guess is less than the machine number => print out "your guess is less than my number. Try again!</dd>
+			<dd>If the user guess is grater than the machine number => print out "your guess is less than my number. Try again!</dd>
+		</dl>
+	</section>
+	<section style="font-size: 1.2em"><h2>Guess the number game - the beggining</h2>
+		<pre><code rel="Python" class="python">
+			from random import randint
+			machine_number = randint(1,10)
+
+			print("machine_number={}".format(machine_number))
+
+			### your code goes bellow:
+
+		</code></pre>
+	</section>
 </section>
 
 
