@@ -73,25 +73,166 @@
 </section>
 
 <section><h2>Boolean type</h2>
+	<section><h3>What?</h3>
+		<dl class="fa">
+			<dt>Most programming languages define a Boolean type, which represents the truth values of logic and Boolean algebra (named after <a href="https://en.wikipedia.org/wiki/George_Boole">George Boole</a>).</dt>
+			<dt>Boolean values in Python are used mainly in the Conditional Statements and Logical Operations.</dt>
+		</dl>
+	</section>
 	<section><h3>The Boolean type</h3>
-		<p>The Boolean data type consists of only 2 values: <br>
-			<code>True</code> and <code>False</code></p>
-		<pre><code rel="Python" class="python">
-			x = True;
-			print(type(x))
-			print(type(False))
+		<dl class="fa">
+			<dt>The Boolean data type consists of only 2 values:</dt>
+			<dd><span class="note">True</span></dd>
+			<dd><span class="note">False</span></dd>
+			<dt>Note, that these are not variables names, but values like 0 and 1!</dt>
+		</dl><br><br>
+		<pre><code rel="Python" class="bash">
+			&gt;&gt;&gt; print( type(True) )
+			&lt;class 'bool'&gt;
+			&gt;&gt;&gt; print( type(False) )
+			&lt;class 'bool'&gt;			
 		</code></pre>		
 	</section>
+	<section><h3>What is True/False in Python?</h3>		
+		<p>True/False values for most of the build-in objects:</p>
+		<table>
+			<tr>
+				<th>Type:</th>
+				<th>=False</th>
+				<th>=True</th>
+			</tr>
+			<tr>
+				<td>any numeric type</td>
+				<td>0 (zero)</td>
+				<td>everything else</td>
+			</tr>
+			<tr>
+				<td>string</td>
+				<td>""</td>
+				<td>any non-empty string</td>
+			</tr>
+			<tr>
+				<td>sequences and collections</td>
+				<td>empty</td>
+				<td>any non empty</td>
+			</tr>			
+		</table>
+	</section>
+	<section><h3>What is True/False in Python - the bool() check</h3>
+		<p>Using the object constructor <code>bool()</code>, we can convert any Python value to True or False</p>
+		<pre><code rel="Python" class="python">
+			>>> bool(-42)
+			True
+			>>> bool(0)
+			False
+			>>> bool(0.00001)
+			True
+			>>> bool("ada")
+			True
+			>>> bool("")
+			False
 
+		</code></pre>
+	</section>
 </section>
 
 <section><h2>Logical (Boolean) operators</h2>
-	<section><h3></h3>		
-		<a href="https://docs.python.org/3/library/stdtypes.html#boolean-operations-and-or-not">Boolean Operations @docs.python.org</a>
+	<section><h3></h3>
+		<table>
+			<tr>
+				<th>Operation</th><th>Result</th>
+			</tr>
+			<tr>
+				<td>x <span class="note">or</span> y</td>
+				<td>if x is false, then y, else x</td>
+			</tr>
+			<tr>
+				<td>x <span class="note">and</span> y</td>
+				<td>if x is false, then x, else y</td>
+			</tr>
+			<tr>
+				<td><span class="note">not</span> x</td>
+				<td>if x is false, then True, else False</td>
+			</tr>
+		</table>
+	</section>
+	<section><h3>Examples</h3>		
+		<pre><code rel="Python" class="python">
+			>>> True and False
+			False
+			>>> 0 and 1
+			0
+			>>> 0 or 1
+			1
+			>>> 1 or 0
+			1
+			>>> not 1
+			False
+			>>> not 0
+			True
+
+		</code></pre>
 	</section>
 </section>
 
 <section><h2>Comparison operators</h2>
+	<section><h3>intro</h3>
+		<dl class="fa">
+			<dt>With Comparison Operations we can check if 2 or more values are equal or if a value is less than other, and so on.</dt>
+			<dt>The result of a Comparison Operation is True/False</dt>
+			<dt class="note">Comparing objects of different types, except different numeric, will raise a TypeError!</dt>
+		</dl><br><br>
+		<pre><code rel="Python" class="python">
+			>>> 2 < 1
+			False
+			>>> 2 < "1"
+			...
+			TypeError: '<' not supported between instances of 'int' and 'str
+		</code></pre>
+	</section>
+	<section><h3>the operators</h3>
+		<table border="1">
+			<colgroup>
+			<col width="32%">
+			<col width="68%">
+			</colgroup>
+			<thead valign="bottom">
+			<tr><th>Operation</th>
+			<th>Meaning</th>
+			</tr>
+			</thead>
+			<tbody valign="top">
+			<tr><td><code><span>&lt;</span></code></td>
+			<td>strictly less than</td>
+			</tr>
+			<tr><td><code><span>&lt;=</span></code></td>
+			<td>less than or equal</td>
+			</tr>
+			<tr><td><code><span>&gt;</span></code></td>
+			<td>strictly greater than</td>
+			</tr>
+			<tr><td><code><span>&gt;=</span></code></td>
+			<td>greater than or equal</td>
+			</tr>
+			<tr><td><code><span>==</span></code></td>
+			<td>equal</td>
+			</tr>
+			<tr><td><code><span>!=</span></code></td>
+			<td>not equal</td>
+			</tr>
+			<tr style="opacity: 0.7"><td><code><span>is</span></code></td>
+			<td>object identity*</td>
+			</tr>
+			<tr style="opacity: 0.7"><td><code><span>is</span> <span>not</span></code></td>
+			<td>negated object identity*</td>
+			</tr>
+			</tbody>
+		</table>
+		<p class="note">Objects identity will be discussed in the OOP part of the course.</p>
+	</section>
+	<section><h3>examples</h3>
+
+	</section>
 	<section>
 		<a href="https://docs.python.org/3/library/stdtypes.html#stdcomparisons">Comparisons @docs.python.org</a>
 	</section>
