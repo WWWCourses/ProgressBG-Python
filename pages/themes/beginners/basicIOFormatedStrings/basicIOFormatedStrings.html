@@ -134,7 +134,7 @@
 	</section>
 </section>
 
-<section><h2>printf-style String Formatting in Python</h3>
+<section><h2>"old-style" String Formatting in Python</h3>
 	<section><h3>syntax</h3>	
 		<pre><code rel="Syntax" class="shell">
 			"format_string" % (values_tuple)
@@ -177,16 +177,17 @@
 			print("x = %.2f, y = %.2f" % (x, y))
 		</code></pre>
 	</section>
-	<section><h3>it's the "old style of formating" - should we use it?</h3>
+	<section><h3>it's the "old style of formatting" - should we use it?</h3>
 		<dl class="fa">
-			<dt>Though considered "the old way" it's still used and is not deprecated in new Python3 versions</dt>
-			<dt>But the preferred way of formating strings in Python is <span class="note">str.format() method</span></dt>
+			<dt>Though considered "the old way" it's still widely used and is not (still) deprecated in new Python3 versions</dt>
+			<dt>But the preferred way of formatting strings in Python is <span class="note">str.format() method</span></dt>
+			<dt>Knowing how this string formatting works, will help you to grasp the "new style", discussed in next slides.</dt>
 		</dl>
 	</section>
 	<section><h3>resources</h3>
 		<dl class="fa">
-			<!-- <dt><a href="https://www.python-course.eu/python3_formatted_output.php">Formatted Output @python-course.eu </a></dt> -->
-			<dt><a href="https://docs.python.org/3.6/library/stdtypes.html#old-string-formatting" class="advanced">printf-style String Formatting @docs.python.org/3.6 </a></dt>
+			<dt><a href="https://www.python-course.eu/python3_formatted_output.php">Formatted Output @python-course.eu </a></dt>
+			<dt class="advanced"><a href="https://docs.python.org/3.6/library/stdtypes.html#old-string-formatting" class="advanced">printf-style String Formatting @docs.python.org/3.6</a></dt>
 		</dl>
 	</section>
 </section>
@@ -207,7 +208,7 @@
 	</section>
 	<section><h3>placeholders</h3>
 		<dl class="fa">
-			<dt>You can give in placeholders an explicit positional index (<span class="note">counting starts from 0</span>), which allows values to be printed in desired format</dt>			
+			<dt>You can give in placeholders an explicit positional index (<span class="note">counting starts from 0</span>), which allows values to be printed in desired order</dt>			
 		</dl><br>
 		<pre><code rel="Python" class="python">
 				>>> "{1} died in {0} year".format("Ada Byron", 1852)
@@ -229,7 +230,7 @@
 	<section><h3>resources</h3>
 		<dl class="fa">
 			<dt><a href="https://www.programiz.com/python-programming/methods/string/format">Python String format() @programiz.com</a></dt>
-			<dt><a href="https://docs.python.org/3.6/library/string.html#formatstrings">Format String Syntax @docs.python.org/3.6</a></dt>
+			<dt class="advanced"><a href="https://docs.python.org/3.6/library/string.html#formatstrings">Format String Syntax @docs.python.org/3.6</a></dt>
 		</dl>		
 	</section>
 	<section><h3>examples</h3>
