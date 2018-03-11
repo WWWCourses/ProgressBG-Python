@@ -1,7 +1,7 @@
 {
 	"folders": [
-		{
-			"path": "pages/themes/beginners/courseIntro/examples/my_project"
+		{			
+			"path": "."
 		}
 	],
 	"settings": {
@@ -11,10 +11,11 @@
 			// the explore tree
 			"**/node_modules": false,
 		},
-		
+
+
 		//python
-		// "python.venvPath": "~/.virtualenvs/",
-		"python.pythonPath": "/home/nemsys/.virtualenvs/pipenv-python3.6-Ou1FleOV/bin/python3.6",
+		// "python.venvPath": "./.venv/",
+		// "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
 		"python.linting.enabled": true,
 		"python.linting.pep8Enabled": false,
 		"python.linting.flake8Enabled": true,
@@ -29,7 +30,7 @@
 				{
 					"match": "\\.py$",
 					// "cmd": "echo 'I am a .py file ${file}.'",
-					"cmd": "clear && python3 ${file}",
+					"cmd": "clear && ${workspaceRoot}/.venv/bin/python ${file}",
 					"useShortcut": false
 				}
 			]
@@ -40,6 +41,12 @@
 		"cSpell.enabled": false,
 		"cSpell.language": "en",
 
-		"workbench.activityBar.visible": false		
+		"workbench.activityBar.visible": false,
+		"workbench.colorCustomizations": {
+			// "activityBar.background": "#00AA00"
+			"editor.selectionBackground": "#74e7a6",
+			"editor.selectionHighlightBackground": "#91c2a7",
+		}
+		"python.pythonPath": "${workspaceFolder}/.venv/bin/python"
 	}
 }
