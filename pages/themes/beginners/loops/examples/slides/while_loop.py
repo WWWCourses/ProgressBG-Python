@@ -1,8 +1,15 @@
-i = 0
-while i<10:
+print("{:~^50}".format(" Simple while loop "))
+i = 1
+while i<=5 :
 	print(i)
 	i += 1
-	if i == 5 : 
-		break
-else:
-	print("Doing something else!")
+
+
+print("{:~^50}".format(" Example of else clause in while "))
+i = 1
+while i <= 5:
+	# if i==3 : break
+	print(i)
+	i += 1
+else :
+	print("Condition is not true when i = ", i)
