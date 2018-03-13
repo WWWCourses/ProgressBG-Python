@@ -21,7 +21,7 @@
 	<script src="lib/js/html5shiv.js"></script>
 	<![endif]-->
 
-	<!-- CUSTOM -->	
+	<!-- CUSTOM -->
 	<base target="_blank">
 </head>
 <body>
@@ -69,7 +69,7 @@
 		<div class="company">
 			 <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="ivapopova"><a class="LI-simple-link" href='https://bg.linkedin.com/in/ivapopova?trk=profile-badge'>Iva E. Popova on LinkedIn</a></div>
 		</div>
-	</section>	
+	</section>
 </section>
 
 <section><h2>Boolean type</h2>
@@ -90,10 +90,10 @@
 			&gt;&gt;&gt; print( type(True) )
 			&lt;class 'bool'&gt;
 			&gt;&gt;&gt; print( type(False) )
-			&lt;class 'bool'&gt;			
-		</code></pre>		
+			&lt;class 'bool'&gt;
+		</code></pre>
 	</section>
-	<section><h3>What is True/False in Python?</h3>		
+	<section><h3>What is True/False in Python?</h3>
 		<p>True/False values for most of the build-in objects:</p>
 		<table>
 			<tr>
@@ -115,7 +115,7 @@
 				<td>sequences and collections</td>
 				<td>empty</td>
 				<td>any non empty</td>
-			</tr>			
+			</tr>
 		</table>
 	</section>
 	<section><h3>What is True/False in Python - the bool() check</h3>
@@ -156,7 +156,7 @@
 			</tr>
 		</table>
 	</section>
-	<section><h3>Examples</h3>		
+	<section><h3>Examples</h3>
 		<pre><code rel="Python" class="python">
 			>>> True and False
 			False
@@ -248,12 +248,12 @@
 			<dl class="fa">
 				<dt>Symbols are compared by their position (codepoint) according to the character code table used.</dt>
 				<dt>First the first two items are compared, and if they differ this determines the outcome of the comparison.If they are equal, the next two items are compared, and so on, until either sequence is exhausted.</dt>
-			</dl>					 
+			</dl>
 	</section>
-	<section><h3>So, why  "9" < "1000" returns False?</h3>		
+	<section><h3>So, why  "9" < "1000" returns False?</h3>
 			<p>If we use the <a href="https://ascii.cl/">ASCII Codes Table</a>, we see that the ASCII code point for "9" is 57, and for "1" - 49.</p>
 			<p>So, Python compares <code>57 < 49</code></p>
-	</section>	
+	</section>
 </section>
 
 <section><h2>Control Flow Statements</h2>
@@ -265,18 +265,18 @@
 	<section><h3>Normal Control Flow</h3>
 		<p>Statements are executed one after another, as written in code.</p>
 		<a href="images/NormalControlFlow.png"><img src="images/NormalControlFlow.png"></a>
-	</section>	
+	</section>
 </section>
 
 <section><h2><code class="note">if</code> statement</h2>
 	<section><h3>Syntax</h3>
-		<a href="images/ifFlow.png"><img src="images/ifFlow.png"></a>	
+		<a href="images/ifFlow.png"><img src="images/ifFlow.png"></a>
 		<dl class="fa">
 			<dt><span class="note">Condition</span> can be any expression, which could be evaluated to <span class="note">True/False</span></dt>
-		</dl>	<br><br>	
+		</dl>	<br><br>
 		<pre><code rel="Syntax" class="shell">
 			if condition :
-				block 1			
+				block 1
 		</code></pre>
 		<p class="note">In Python, to encompass the statements which forms a block, you do not need to put any braces, but each statement have to be indented with the same amount of spaces!</p>
 	</section>
@@ -304,13 +304,13 @@
 	<section><h3>Syntax</h3>
 		<pre><code rel="Syntax" class="shell">
 			if condition :
-				block 1	
+				block 1
 			else :
-				block 2		
-		</code></pre>		
+				block 2
+		</code></pre>
 	</section>
 	<section><h3>Flow</h3>
-		<a href="images/if-elseFlow.png"><img src="images/if-elseFlow.png"></a>	
+		<a href="images/if-elseFlow.png"><img src="images/if-elseFlow.png"></a>
 	</section>
 	<section><h3>example - even/odd number</h3>
 		<pre><code rel="Python" class="python">
@@ -344,18 +344,18 @@
 	<section><h3>Syntax</h3>
 		<pre><code rel="Syntax" class="shell">
 			if c1 :
-				block 1	
+				block 1
 			elif c2:
-				block 2	
+				block 2
 			else:
 				block 3
-		</code></pre>	
+		</code></pre>
 		<dl class="fa">
 				<dt><span class="note">We can have more than one elif statement</span>, as shown in next examples!</dt>
-			</dl>	
+			</dl>
 	</section>
 	<section><h3>Flow</h3>
-		<a href="images/if-elif-elseFlow.png"><img src="images/if-elif-elseFlow.png"></a>	
+		<a href="images/if-elif-elseFlow.png"><img src="images/if-elif-elseFlow.png"></a>
 	</section>
 	<section><h3>example - multinational hello</h3>
 		<pre><code rel="Python" class="python">
@@ -387,15 +387,15 @@
 			<dt>Now, the output of your program should be the BMI category, corresponding to the BMI index</dt>
 		</dl>
 	</section>
-	<section style="font-size: 0.8em"><h2>Guess the number game - the beggining</h2>
+	<section id="hw_guess_the_number" style="font-size: 0.8em"><h2>Guess the number game - the beginning</h2>
 		<dl class="fa">
 			<dt>Write a simple Python program, implementing the "Guess the number" game, following the rules:</dt>
 			<dd>The program will "think" of a number using the <code>random module</code>, as shown in code shown in next slide.</dd>
 			<dt>You have to implement now only the first user move:</dt>
 			<dd>Prompt the user for his/her guess</dd>
-			<dd>If the user guess is equal to the machine number, the print out a congratulation message!</dd>
-			<dd>If the user guess is less than the machine number => print out "your guess is less than my number. Try again!</dd>
-			<dd>If the user guess is grater than the machine number => print out "your guess is less than my number. Try again!</dd>
+			<dd>If the user guess is equal to the machine number => print out a congratulation message!</dd>
+			<dd>If the user guess is less than the machine number => print out "your guess is less than my number. Try again!"</dd>
+			<dd>If the user guess is greater than the machine number => print out "your guess is greater than my number. Try again!"</dd>
 		</dl>
 	</section>
 	<section style="font-size: 1.2em"><h2>Guess the number game - the beggining</h2>

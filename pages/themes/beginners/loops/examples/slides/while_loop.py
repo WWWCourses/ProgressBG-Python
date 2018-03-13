@@ -4,6 +4,7 @@ while i<=5 :
 	print(i)
 	i += 1
 
+
 print("\n{:~^45}".format(" Example: sum all numbers in [1..100] "))
 i = 1
 sum = 0
@@ -30,3 +31,10 @@ while i <= 5:
 	i += 1
 else:
 	print("Condition is not true when i = ", i)
+
+
+print("\nEnter number, but not 0")
+user_number = int(input("Enter a number, but not 0, please: "))
+while user_number == 0:
+	user_number = input("Enter a number, but not 0, please: ")
+print("Your number is ", user_number)

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>sequenceDataTypes</title>
+	<title>dictAndSetDataTypes</title>
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -55,7 +55,7 @@
 ##################### SLIDES START #####################
 ########################################################
 -->
-<section><h1>Sequence Data Types (Basic data structures)</h1></section>
+<section><h1>More Data Types: Dictionaries and Sets</h1></section>
 <section data-transition="zoom">
 	<!-- linkedin badge -->
 	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
@@ -80,154 +80,16 @@
 	</section>
 </section>
 
-<section><h2>Sequence Data Types</h2>
-	<section><h3>What is a Sequence?</h3>
-		<dl class="fa">
-			<dt>A sequence in Python is a collection of objects, ordered by their position</dt>
-			<dt>The position number of an item in a sequence is called <span class="note">index</span></dt>
-			<dt class="note">Indexes starts counting from 0</dt>
-			<dt>All sequence data type in Python supports common sequence operations</dt>
-			<dt>Each sequence data type has also own methods for performing specific operations</dt>
-		</dl>
-	</section>
-</section>
-
-<section><h2>Lists</h2>
-	<section><h3>What is a List?</h3>
-		<dl class="fa">
-			<dt>A list is a <span class="note">mutable</span> (i.e. changeable) sequence of data.</dt>
-			<dt>Usually, the objects in a list are of the same type, but this is not obligatory.</dt>
-			<dt>Lists are general-purpose data structure</dt>
-			<dt>Lists, being mutable sequence, can grow or shrink.</dt>
-			<dt>The objects in a list can repeat many times</dt>
-		</dl>
-	</section>
-	<section><h3>What is a List?</h3>
-		<a href="images/Python_List_Detail.png"><img src="images/Python_List_Detail.png"></a>
-	</section>
-	<section><h3>Create list</h3>
-		<pre><code rel="Python" class="python">
-			# create empty list:
-			empty_list = []
-
-			# create list of fruits:
-			fruits = ["apple", "banana", "strawberry", "banana", "orange"]
-		</code></pre>
-	</section>
-	<section><h3>Retrieving item from list - syntax</h3>
-		<pre><code rel="Syntax" class="shell" data-noescape>
-			list_name<b>[</b>index<b>]</b>
-		</code></pre>
-		<dl class="fa">
-			<dt>Indexing from start to end:</dt>
-			<dd>First list item is with index <b>0</b></dd>
-			<dt>Indexing from end to start:</dt>
-			<dd>Last list item is with index <b>-1</b></dd>
-		</dl>
-	</section>
-	<section><h3>Indexing from start to end</h3>
-		<a href="images/Python_List_Indexing_Start_To_End.png"><img src="images/Python_List_Indexing_Start_To_End.png"></a>
-	</section>
-	<section><h3>Indexing from start to end - example</h3>
-			<pre><code rel="Python" class="python">
-				# create list of numbers:
-				numbers = [1,2,3,4,5]
-
-				# index from start to end:
-				print(numbers[0],numbers[1],numbers[2],numbers[3],numbers[4])
-				# 1 2 3 4 5
-			</code></pre>
-	</section>
-	<section><h3>Indexing from end to start</h3>
-		<a href="images/Python_List_Indexing_End_To_Sart.png"><img src="images/Python_List_Indexing_End_To_Sart.png"></a>
-	</section>
-	<section><h3>Indexing from end to start - example</h3>
-		<pre><code rel="Python" class="python">
-			# create list of numbers:
-			numbers = [1,2,3,4,5]
-
-			# index from end to start:
-			print(numbers[-1],numbers[-2],numbers[-3],numbers[-4],numbers[-5])
-			# 5 4 3 2 1
-		</code></pre>
-	</section>
-	<section><h3>List Methods</h3>
-		<p>This methods will be discussed more deeply after OOP theme.</p>
-		<a href="https://docs.python.org/3/tutorial/datastructures.html#tut-morelists">More on Lists @python docs</a>
-	</section>
-	<section><h3>Examples</h3>
-		<pre><code rel="Python" class="python">
-			fav_colors = ["black", "orange", "blue"]
-			print("fav_colors in begining:", fav_colors)
-			# fav_colors in begining: ['black', 'orange', 'blue']
-
-			fav_colors.append("white")
-			print("fav_colors after append", fav_colors)
-			# fav_colors after append ['black', 'orange', 'blue', 'white']
-		</code></pre>
-	</section>
-</section>
-
-<section><h2>Tuples</h2>
-	<section><h3>What is a Tuple?</h3>
-		<dl class="fa">
-			<dt>A tuple is <span class="note">immutable</span> (i.e. not changeble) sequence of data.</dt>
-			<dt>Useful for fixed data</dt>
-			<dt>Once created a tuple can not be changed! No grow or shrink can happens.</dt>
-			<dt>Typles are faster than lists, but they are not general-purpose.</dt>
-		</dl>
-	</section>
+<section><h2>Dictionaries</h2>
+	<section><h3>What is a Dictionary?</h3></section>
 	<section><h3>Syntax</h3></section>
-	<section><h3>Examples</h3>
-		<pre><code rel="Python" class="python">
-			ada_birth_date = (10, "December", 1815)
-		</code></pre>
-	</section>
+	<section><h3>Example</h3></section>
 </section>
 
-<section><h2>Range Objects</h2>
-	<section><h3>What is a Range Object?</h3>
-		<dl class="fa">
-			<dt>The range type represents an immutable sequence of numbers and is commonly used for looping a specific number of times in for loops.</dt>
-		</dl>
-	</section>
-	<section><h3>Syntax</h3>
-		<pre><code rel="Syntax" class="shell" data-noescape>
-			range(start, stop[, step])
-		</code></pre>
-	</section>
-	<section><h3>Examples</h3>
-		<pre><code rel="Python" class="python">
-
-		</code></pre>
-	</section>
-</section>
-
-<section><h2>Strings Sequences</h2>
-	<section><h3>Examples</h3>
-		<pre><code rel="Python" class="python">
-
-		</code></pre>
-	</section>
-</section>
-
-<section><h2>Sequence Slicing</h2>
-	<section><h3>Syntax</h3>
-		<pre><code rel="Syntax" class="shell" data-noescape>
-			# get items from start through end-1
-			s[start:end]
-
-			# get items from start through the rest of the array
-			s[start:]
-
-			# get items from the beginning through end-1
-			s[:end]
-
-			# get items from begining through the end
-			# i.e. copy of the whole array
-			s[:]
-		</code></pre>
-	</section>
+<section><h2>Sets</h2>
+	<section><h3>What is a Set?</h3></section>
+	<section><h3>Syntax</h3></section>
+	<section><h3>Example</h3></section>
 </section>
 
 
