@@ -21,7 +21,7 @@
 	<script src="lib/js/html5shiv.js"></script>
 	<![endif]-->
 
-	<!-- CUSTOM -->	
+	<!-- CUSTOM -->
 	<style type="text/css">
 		.reveal section iframe{
 			text-align: center;
@@ -77,7 +77,7 @@
 		<div class="company">
 			 <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="ivapopova"><a class="LI-simple-link" href='https://bg.linkedin.com/in/ivapopova?trk=profile-badge'>Iva E. Popova on LinkedIn</a></div>
 		</div>
-	</section>	
+	</section>
 </section>
 
 <section><h2>What are <span class="note">loops (cycles)</span></h2>
@@ -91,38 +91,132 @@
 </section>
 
 <section><h2><code>While</code> loop</h2>
-	<section><h3>Syntax</h3>		
-		<pre><code rel="Syntax" class="python">
-			while condition :
-				block
-			[else: block]
+	<section><h3>Syntax</h3>
+		<pre><code rel="Syntax" class="python" data-noescape>
+			while <i>condition</i> <b>:</b>
+				<i>block</i>
+			[else <b>:</b> <i>block</i>]
 		</code></pre>
+		<dl class="fa">
+			<dt>The block will be executed <b>while</b> the <b>condition is True</b>!</dt>
+			<dt>The <code>else</code> clause is optional.</dt>
+			<dt class="note">Inside the block we have to change the variable used in condition to prevent an endless loop. Or we can use <code>break</code> statement (discussed further)</dt>
+		</dl>
+	</section>
+	<section><h3>Flow</h3>
+		<a href="images/WhileFlow.png"><img src="images/WhileFlow.png"></a>
+	</section>
+	<section><h3>Simple example</h3>
 		<pre><code rel="Python" class="python">
 			i = 1
 			while i<=5 :
 				print(i)
 				i += 1
 		</code></pre>
+		<pre><code rel="Output" class="shell">
+			1
+			2
+			3
+			4
+			5
+		</code></pre>
 	</section>
-	<section><h3>Flow</h3></section>
-	<section><h3>Examples</h3></section>
+	<section><h3>Example: sum all numbers in [1..100]</h3>
+		<pre><code rel="Python" class="python">
+			i = 1
+			sum = 0
+			while i <= 100:
+				sum += i
+				i += 1
+			print("sum = ", sum)
+		</code></pre>
+		<pre><code rel="Output" class="shell">
+			sum =  2550
+		</code></pre>
+	</section>
+	<section><h3>Example: endless loop (find the problem)</h3>
+		<p class="note">If you run next code, your Python will run an endless loop. Use <kbd>CTRL+C</kbd> or <kbd>CTRL+Z</kbd> to stop it</p>
+		<pre><code rel="JS" class="js">
+			# print the numbers from 10 to 1:
+			i = 10
+			while i>=5 :
+				print(i)
+				i = 1
+		</code></pre>
+	</section>
+	<section><h3>Task: sum even numbers in [1..100]</h3>
+		<dl class="fa">
+			<dt>Modify the previous example, but calculate the sum <span class="note">only of the even numbers</span> in the given interval [1..100]</dt>
+		</dl>
+		<pre><code rel="Output" class="shell">
+			sum =  2550
+		</code></pre>
+	</section>
 </section>
 
 <section><h2><code>For</code> loop</h2>
 	<section><h3>Syntax</h3>
+		<pre><code rel="Syntax" class="python" data-noescape>
+			for <i>item</i> in <i>sequence</i> <b>:</b>
+				#do something with item
+		</code></pre>
 		<dl class="fa">
-			<dt></dt>
-		</dl>	
-		<pre><code rel="Syntax" class="python">
-
+			<dt>Python <code>for</code> statement is different than the "C-based" <code>for</code> in other popular languages (C#, Java, PHP, JavaScript)</dt>
+			<dt>In Python, <code>for</code> statement iterates over the items of any sequence.</dt>
+			<dd>This is common to <code>foreach</code> loop concept in above-mentioned languages </dd>
+		</dl>
+	</section>
+	<section><h3>Flow</h3>
+		<a href="images/ForFlow.png"><img src="images/ForFlow.png"></a>
+	</section>
+	<section><h3>Simple example 1</h3>
+		<p>Iterate over symbols in string:</p>
+		<pre><code rel="Python" class="python">
+			for s in "ada":
+				print(s.capitalize())
+		</code></pre>
+		<pre><code rel="Output" class="shell">
+			A
+			D
+			A
 		</code></pre>
 	</section>
-	<section><h3>Flow</h3></section>
-	<section><h3>Examples</h3></section>
+	<section><h3>Simple example 2</h3>
+		<p>Iterate over symbols list of numbers:</p>
+		<pre><code rel="Python" class="python">
+			for num in [1,2,3,4]:
+				print(num)
+		</code></pre>
+		<pre><code rel="Output" class="shell">
+			1
+			2
+			3
+			4
+		</code></pre>
+	</section>
+	<section><h3 class="advanced">Nested for loops</h3>
+		<pre><code rel="Python" class="python">
+			for i in [1,2,3]:
+				for j in "abv":
+					print(j)
+				print("\n") #prints new line
+		</code></pre>
+		<dl class="fa">
+			<dt class="note">More examples and real-world usage of the <code>for</code> statement will be shown in <a href="/ProgressBG-Python/pages/themes/beginners/sequenceDataTypes/sequenceDataTypes.html">Sequence data types</a> theme!</dt>
+		</dl>
+	</section>
 </section>
 
-<section><h2></h2>
+<section><h2>break statement</h2>
 	<section></section>
+</section>
+
+<section><h2>break statement</h2>
+	<section><h3>Syntax</h3>
+		<dl class="fa">
+			<dt>returns the control to the beginning of the while loop</dt>
+		</dl>
+	</section>
 </section>
 
 

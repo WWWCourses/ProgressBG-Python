@@ -18,7 +18,7 @@
 .reveal pre>code{
 	font-family: 'Inconsolata', monospace;
 	/*font-weight: bold;*/
-	/*font-size: 0.8em;*/	
+	font-size: 1.2em;	
 	line-height: 1.1em;
 	margin: 1em 0 1em 0;
 	padding-left: .3em;
@@ -56,6 +56,10 @@ code[rel="JS"]::before{
 }
 code[rel="Terminal"]::before{
 	background: rgba(0,0,0, .6);
+	color: #FFF;
+}
+code[rel="Output"]::before{
+	background: rgba(0,0,0, .4);
 	color: #FFF;
 }
 code:first-line{
