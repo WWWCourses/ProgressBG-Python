@@ -601,61 +601,6 @@
 			# ['strawberry', 'banana', 'apple']
 		</code></pre>
 	</section>
-	<section><h3 class="advanced">Lists of lists</h3>
-		<dl class="fa">
-			<dt>A list item can be <span class="note">any data type</span>, including list, tuples and so on.</dt>
-		</dl>
-		<pre><code rel="Python" class="python">
-			### create list of lists:
-			matrix = [
-			    [1,2,3],
-			    [4,5,6],
-			    [7,8,9],
-			]
-
-			### retrieve the first element from the first list:
-			print(matrix[0][0] )
-			# 1
-
-			### retrieve the last element from the first list:
-			print(matrix[0][-1])
-			# 3
-
-			### retrieve the first element from the last list:
-			print(matrix[-1][0])
-			# 7
-
-			### retrieve the last element from the last list:
-			print(matrix[-1][-1])
-			# 9
-		</code></pre>
-	</section>
-	<section><h3>List of tuples</h3>
-		<pre><code rel="Python" class="python">
-			### create list_of_tuples:
-			points = [
-			    (1,2),
-			    (3,4),
-			    (5,6)
-			]
-
-			### retrieve the first element from the first tuple:
-			print(points[0][0])
-			# 1
-
-			### retrieve the last element from the first tuple:
-			print(points[0][-1])
-			# 2
-
-			### retrieve the first element from the last tuple:
-			print(points[-1][0])
-			# 5
-
-			### retrieve the last element from the last tuple:
-			print(points[-1][-1])
-			# 6
-		</code></pre>
-	</section>
 </section>
 
 <section><h2>More on tuples</h2>
@@ -695,38 +640,8 @@
 
 <section><h2>Resources</h2>
 	<dl class="fa">
-		<dt><a href="https://www.programiz.com/python-programming/methods/tuple">Python Tuple Methods @programiz.com</a></dt>
-		<dt><a href="https://www.programiz.com/python-programming/methods/list">Python List Methods @programiz.com</a></dt>
-		<dt><a href="https://www.programiz.com/python-programming/methods/string">Python String Methods @programiz.com</a></dt>
-		<dt class="advanced"><a href="https://docs.python.org/3/tutorial/datastructures.html#tut-morelists">More on Lists @python docs</a></dt>
+		<dt><a href="https://docs.python.org/3/tutorial/datastructures.html#tut-morelists">More on Lists @python docs</a></dt>
 	</dl>
-</section>
-
-<section><h2>Exercises</h2>
-	<section><h3>Task 1</h3>
-		<dl class="fa">
-			<dt>Create 2 lists:</dt>
-			<dd><code>first_names</code> with items "ivan", "maria", "petar"</dd>
-			<dd><code>sur_names</code> with items "ivanov", "popova", "petrov"</dd>
-			<dt>From <code>first_names</code> and <code>sur_names</code> create a third list:</dt>
-			<dd><code>names</code> which will hold the items from the two list above as given:</dd>
-		</dl>
-		<pre><code rel="Output" class="shell" data-noescape>
-			print(names)
-			# ['ivan', 'maria', 'petar', 'ivanov', 'popova', 'petrov']
-		</code></pre>
-	</section>
-	<section><h3>Task 2</h3>
-		<dl class="fa">
-			<dt>Given the two list <code>first_names</code> and <code>sur_names</code> as in previous task.</dt>
-			<dt>From <code>first_names</code> and <code>sur_names</code> create a third list:</dt>
-			<dd><code>names</code> which will hold the items from the two list with next order:</dd>
-		</dl>
-		<pre><code rel="Output" class="shell" data-noescape>
-			print(names)
-			# ['ivan', 'ivanov', 'maria', 'popova', 'petar', 'petrov']
-		</code></pre>
-	</section>
 </section>
 
 <section class="disclaimer" data-background="/ProgressBG-Python/outfit/images/for_slides/the_end_on_sand.jpg">

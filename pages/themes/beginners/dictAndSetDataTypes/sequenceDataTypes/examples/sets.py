@@ -1,9 +1,9 @@
-# create empty tuple:
-empty = ()
-print("empty_tuple: ", empty )
+# create empty set:
+empty = {}
+print("empty_set: ", empty)
 
-# create tuple of fruits:
-fruits = ("apple", "banana", "strawberry", "banana", "orange")
+# create set of fruits:
+fruits = {"apple", "banana", "strawberry", "banana", "orange"}
 print("fruits: ", fruits)
 
 # index from start to end:

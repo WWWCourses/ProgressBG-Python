@@ -30,6 +30,7 @@
 /*sub-section title*/
 .reveal>.slides>section>section>h3{
   font-size: 1.3em;
+  padding: 1em 0 0.5em 0;
 }
 .reveal>.slides>section>section>h3:after{
   display: block;
@@ -81,7 +82,7 @@
     font-size: .6em;
     opacity: .5;
     color: #999;
-} 
+}
 .reveal section dl.fa>dt{
   font-weight: normal;
   margin: .5em 0 0 0;
@@ -286,8 +287,8 @@ section.copyright>.author{
     margin: 1em 0em 0.5em 0;
     font-size: 1.2em;
 }
-section.copyright>.author a{  
-  vertical-align: middle;  
+section.copyright>.author a{
+  vertical-align: middle;
 }
 section.copyright>.author img{
   margin: 0;
