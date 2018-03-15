@@ -31,3 +31,4 @@ ada_birth_month = ada_birth_date[1]
 ada_birth_year = ada_birth_date[2]
 
 print("Ada is born on {} {} in {}".format(ada_birth_month, ada_birth_day, ada_birth_year))
+# Ada is born on December 10 in 181

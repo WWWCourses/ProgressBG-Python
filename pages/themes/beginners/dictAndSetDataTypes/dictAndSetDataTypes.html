@@ -81,16 +81,152 @@
 </section>
 
 <section><h2>Dictionaries</h2>
-	<section><h3>What is a Dictionary?</h3></section>
-	<section><h3>Syntax</h3></section>
-	<section><h3>Example</h3></section>
+	<section><h3>What is a Dictionary?</h3>
+		<dl class="fa">
+			<dt>An <span class="note">unordered</span> collection of objects (values)</dt>
+			<dt>Each value is associated with a <span class="note">unique key</span>.</dt>
+			<dt>Dictionary values can be retrieved from the collection using their respective keys.</dt>
+			<dt>A dictionary can be regarded as a collection of <span class="note">key:value</span> pairs</dt>
+			<dt>Dictionaries in Python are similar to <em>associative arrays</em>, <em>hashes (hash tables)</em> in other programming languages (PHP, Perl, Ruby)</dt>
+		</dl>
+	</section>
+	<section><h3>Dictionary Structure</h3>
+		<a href="images/dictionary_structure.png"><img src="images/dictionary_structure.png"></a>
+	</section>
+	<section><h3>Syntax</h3>
+		<pre><code rel="Syntax" class="shell" data-noescape>
+			dictionary = {
+			'key1': <em>value 1</em>,
+			'key2': <em>value 2</em>,
+			'keyN': <em>value N</em>
+			}
+		</code></pre>
+		<dl class="fa">
+			<dt>There is <span class="note">no order</span> in dictionary, and is not guaranteed that the first declared pair will be first in the dictionary.</dt>
+			<dt>Keys must be <span class="note">immutable</span> data type. Usually they are strings.</dt>
+		</dl>
+	</section>
+	<section><h3>Retrieve item from dictionary</h3>
+		<pre><code rel="Syntax" class="shell" data-noescape>
+				item = dictionary_name[<em>key</em>]
+		</code></pre>
+		<pre><code rel="Python" class="python">
+			prices = {
+			  "apples": 2.50,
+			  "oranges": 2.43,
+			  "bananas": 3.50
+			}
+
+			apples_price = prices['apples']
+			print("{:.2f}".format(apples_price))
+			# 2.50
+
+			oranges_price = prices['oranges']
+			print("{:.2f}".format(oranges_price))
+			# 2.43
+		</code></pre>
+	</section>
+	<section><h3>Change item in a dictionary</h3>
+		<pre><code rel="Syntax" class="shell" data-noescape>
+				dictionary_name[<em>key</em>] = <em>new_value</em>
+		</code></pre>
+		<pre><code rel="Python" class="python">
+			### change apples prices:
+			prices['apples'] = 2.20
+			print(prices)
+			# {'apples': 2.2, 'oranges': 2.43, 'bananas': 3.5}
+		</code></pre>
+	</section>
+	<section><h3>Delete item from dictionary</h3>
+		<pre><code rel="Python" class="python">
+			prices = {
+			  "apples": 2.50,
+			  "oranges": 2.43,
+			  "bananas": 3.50
+			}
+
+			### remove 'apples' key:value pair from the dictinary, and return its value
+			apples_price = prices.pop('apples')
+			print(apples_price, prices)
+			# 2.5 {'oranges': 2.43, 'bananas': 3.5}
+
+			### just delete 'oranges' key:value pair:
+			del prices['oranges']
+			print(prices)
+			# {'bananas': 3.5}
+		</code></pre>
+	</section>
+	<section><h3>Get all dictionary keys</h3>
+		prices = {
+		    "apples": 2.50,
+		    "oranges": 2.43,
+		    "bananas": 3.50
+		}
+
+		fruits = prices.keys()
+		print(fruits)
+		# dict_keys(['apples', 'oranges', 'bananas'])
+	</section>
+	<section><h3>get all dictionary values</h3>
+		<pre><code rel="Python" class="python">
+			prices = {
+			    "apples": 2.50,
+			    "oranges": 2.43,
+			    "bananas": 3.50
+			}
+
+			price_list = prices.values()
+			print(price_list)
+			# dict_values([2.5, 2.43, 3.5])
+		</code></pre>
+	</section>
+	<section><h3>Iterate over dictionary keys:</h3>
+		<pre><code rel="Syntax" class="shell" data-noescape>
+			for key in dict_name:
+				# do something with a key
+				# do something with a value: dict_name[key]
+		</code></pre>
+		<pre><code rel="Python" class="python">
+			prices = {
+			    "apples": 2.50,
+			    "oranges": 2.43,
+			    "bananas": 3.50
+			}
+
+			for key in prices:
+			    print("{} - {}".format(key, prices[key]))
+			# apples - 2.5
+			# oranges - 2.43
+			# bananas - 3.5
+		</code></pre>
+	</section>
+	<section><h3>Iterate over keys and values</h3>
+		<pre><code rel="Syntax" class="shell" data-noescape>
+			for key, value in dict_name.items():
+				# do something with a key
+				# do something with a value
+		</code></pre>
+		<pre><code rel="Python" class="python">
+			prices = {
+			    "apples": 2.50,
+			    "oranges": 2.43,
+			    "bananas": 3.50
+			}
+
+			for fruit, price in prices.items():
+			    print("{} - {}".format(fruit, price))
+			# apples - 2.5
+			# oranges - 2.43
+			# bananas - 3.5
+		</code></pre>
+	</section>
 </section>
 
-<section><h2>Sets</h2>
+<!-- <section><h2>Sets</h2>
 	<section><h3>What is a Set?</h3></section>
 	<section><h3>Syntax</h3></section>
 	<section><h3>Example</h3></section>
-</section>
+</section> -->
 
 
 <section class="disclaimer" data-background="/ProgressBG-Python/outfit/images/for_slides/the_end_on_sand.jpg">
