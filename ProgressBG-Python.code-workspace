@@ -56,8 +56,10 @@
 			"strings": false
 		},
 		"files.insertFinalNewline": true,
+		"files.trimTrailingWhitespace": true,
 		"editor.minimap.maxColumn": 80,
 		"editor.parameterHints": false,	
-		"editor.hover": false	
+		"editor.hover": false,
+		"editor.trimAutoWhitespace": true
 	}
 }

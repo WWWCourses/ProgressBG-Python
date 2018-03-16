@@ -3,7 +3,7 @@ empty = ()
 print( empty )
 # ()
 
-### create tuple with one element - note the trailing coma!
+### create tuple with one element - note the trailing comma!
 t = (99,)
 print(t)
 # (99,)
