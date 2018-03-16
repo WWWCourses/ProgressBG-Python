@@ -26,6 +26,9 @@ print("banana" not in fruits)
 print("banana" not in numbers)
 # True
 
+r = range(0,10)
+print(3 in r)
+
 
 ### Indexing
 str = "abcde"
