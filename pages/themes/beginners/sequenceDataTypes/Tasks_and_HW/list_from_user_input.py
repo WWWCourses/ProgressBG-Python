@@ -5,7 +5,7 @@ for i in range(names_count):
     name = input("Enter a name, please: ")
     names.append(name)
 
-print("*" * 30, "\n")
+print("*" * 30)
 print("The names you've entered are:")
 for name in names:
     print(name)
