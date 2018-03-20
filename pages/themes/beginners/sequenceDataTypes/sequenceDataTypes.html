@@ -804,6 +804,15 @@
 			# ['ivan', 'maria', 'petar', 'ivanov', 'popova', 'petrov']
 		</code></pre>
 	</section>
+	<section><h3>Task 1 - Solution</h3>
+		<pre><code rel="Python" class="python">
+			first_names = ["ivan", "maria", "petar"]
+			sur_names = ["ivanov", "popova", "petrov"]
+
+			names = first_names + sur_names
+			print(names)
+		</code></pre>
+	</section>
 	<section><h3>Task 2</h3>
 		<dl class="fa">
 			<dt>Given are two lists <code>first_names</code> and <code>sur_names</code> as in previous task.</dt>
@@ -815,12 +824,74 @@
 			# ['ivan', 'ivanov', 'maria', 'popova', 'petar', 'petrov']
 		</code></pre>
 	</section>
+	<section><h3>Task 2 - Solution with Append (preferred)</h3>
+		<pre><code rel="Python" class="python">
+			first_names = ["ivan", "maria", "petar"]
+			sur_names = ["ivanov", "popova", "petrov"]
+
+			# names will store the third list. In the beginning it's empty:
+			names = []
+
+			# make the third list:
+			for i in range(len(first_names)):
+			    names.append(first_names[i])
+			    names.append(sur_names[i])
+
+			print(names)
+		</code></pre>
+	</section>
+	<section><h3>Task 2 - Solution with lists concatenation (just for demo)</h3>
+		<pre><code rel="Python" class="python">
+			first_names = ["ivan", "maria", "petar"]
+			sur_names = ["ivanov", "popova", "petrov"]
+
+			# names will store the third list. In the beginning it's empty:
+			names = []
+
+			# make the third list:
+			for i in range(len(first_names)):
+			    names = names + [first_names[i], sur_names[i]]
+
+			print(names)
+		</code></pre>
+	</section>
 	<section><h3>Task 3</h3>
 		<dl class="fa">
 			<dt>Write a program which will prints out the sum of the all even numbers in the interval 1000, 1200 (both included).</dt>
 		</dl>
 		<pre><code rel="Output" class="shell" data-noescape>
 			111100
+		</code></pre>
+	</section>
+	<section><h3>Task 3 - Solution with for loop (preferred)</h3>
+		<pre><code rel="Python" class="python">
+			# in the beginning the sum is 0:
+			sum = 0
+
+			# add each number to the current sum:
+			for i in range(1000, 1201):
+					# you can skip next line, if you add step 2 in range
+			    if i % 2 == 0:
+			        sum += i
+			print(sum)
+		</code></pre>
+	</section>
+	<section><h3>Task 3 - Solution with while loop (just for demo)</h3>
+		<pre><code rel="Python" class="python">
+			# in the beginning the sum is 0:
+			sum = 0
+
+			first_num = 1000
+			last_num = 1200
+
+			# add each number to the current sum:
+			num = first_num
+			while num <= last_num:
+			    if num % 2 == 0:
+			        sum += num
+			    num += 1
+
+			print(sum)
 		</code></pre>
 	</section>
 	<section><h3>Task 4</h3>
@@ -834,6 +905,17 @@
 			talent
 			aria
 			tent
+		</code></pre>
+	</section>
+	<section><h3>Task 4 - Solution</h3>
+		<pre><code rel="Python" class="python">
+			words = ["dog", "talent", "loop", "aria", "tent", "choice"]
+
+			print("Words which starts and end with same letter are:")
+			for word in words:
+				# if first letter is equal to last letter:
+				if word[0] == word[-1]:
+					print(word)
 		</code></pre>
 	</section>
 	<section><h3>Task 5</h3>
@@ -853,35 +935,87 @@
 			Stoyan
 		</code></pre>
 	</section>
+	<section><h3>Task 5 - Solution with range and append</h3>
+		<pre><code rel="Python" class="python">
+			names_count = int(input("How many names are you going to enter? "))
+			# names will be stored in next list:
+			names = []
+
+			# get and save to names the user input:
+			for i in range(names_count):
+			    name = input("Enter a name, please: ")
+			    # append user input to names list:
+			    names.append(name)
+
+			# now print what user have entered:
+			print("*" * 30)
+			print("The names you've entered are:")
+			for name in names:
+			    print(name)
+		</code></pre>
+	</section>
 	<section><h3>Task 6 - page 1</h3>
 		<p>Given are next list of distances from Sofia:</p>
 		<pre><code rel="Python" class="python">
 			distances_from_sofia = [
-			    ("Bansko", 97),
-			    ("Belgium - Brussels", 1701),
-			    ("Egypt - Alexandria", 1403),
-			    ("France - Nice", 1307),
-			    ("Hungary - Szeged", 469),
-			    ("Ireland - Dublin", 2479),
-			    ("Italy - Palermo", 987),
-			    ("Russia - Moscow", 1779),
-			    ("Norway - Oslo", 2098),
-			    ("United Kingdom - London", 2019),
-			    ("Spain - Madrid", 2259),
+			  ('Bansko', 97),
+			  ('Brussels', 1701),
+			  ('Alexandria', 1403),
+			  ('Nice', 1307),
+			  ('Szeged', 469),
+			  ('Dublin', 2479),
+			  ('Palermo', 987),
+			  ('Oslo', 2098),
+			  ('Moscow', 1779),
+			  ('Madrid', 2259),
+			  ('London', 2019)
 			]
 		</code></pre>
 	</section>
 	<section><h3>Task 6 - page 2</h3>
 		<p>Write a program, which will outputs only the distances from Sofia which are bellow 1500km</p>
 		<pre><code rel="Output" class="text" data-noescape>
-			Distances bellow 1500km from Sofia are:
+			Distances bellow 1500 km from Sofia are:
 			Bansko - 97
-			Egypt - Alexandria - 1403
-			France - Nice - 1307
-			Hungary - Szeged - 469Italy - Palermo - 987
+			Alexandria - 1403
+			Nice - 1307
+			Szeged - 469
+			Palermo - 987
+		</code></pre>
+	</section>
+	<section><h3>Task 6 - Solution</h3>
+		<pre><code rel="Python" class="python">
+			distances_from_sofia = [
+			    ('Bansko', 97),
+			    ('Brussels', 1701),
+			    ('Alexandria', 1403),
+			    ('Nice', 1307),
+			    ('Szeged', 469),
+			    ('Dublin', 2479),
+			    ('Palermo', 987),
+			    ('Oslo', 2098),
+			    ('Moscow', 1779),
+			    ('Madrid', 2259),
+			    ('London', 2019)
+			]
+
+			# variable to store the filtered list of distance tuples:
+			selected_distances = []
+
+			# filter each distance tuple:
+			for item in distances_from_sofia:
+			    # each item is a tuple, and we check its second value:
+			    if(item[1] < 1500):
+			        selected_distances.append(item)
+
+			# print the filtered list of distance tuples:
+			print("Distances bellow 1500 km from Sofia are:")
+			for item in selected_distances:
+			    print("{} - {}".format(item[0], item[1]))
 		</code></pre>
 	</section>
 </section>
+<section></section>
 
 <section class="disclaimer" data-background="/ProgressBG-Python/outfit/images/for_slides/the_end_on_sand.jpg">
 	 <p>These slides are based on.</p>
