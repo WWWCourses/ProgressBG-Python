@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>functions</title>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+	<!-- css & themes include -->
+	<link rel="stylesheet" href="/ProgressBG-Python/lib/reveal.js/css/reveal.css">
+	<link rel="stylesheet" href="/ProgressBG-Python/outfit/css/themes/light.css" id="theme">
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? '/ProgressBG-Python/lib/reveal.js/css/print/pdf.css' : '/ProgressBG-Python/lib/reveal.js/css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+
+	<!-- CUSTOM -->
+	<style type="text/css">
+		.reveal section iframe{
+			text-align: center;
+			margin: 0 auto;
+			height: 70vh;
+		}
+
+	</style>
+	<base target="_blank">
+</head>
+<body>
+	<div class="reveal default center" data-transition-speed="default" data-background-transition="default">
+		<div class="top_links">
+			<a class="home_link" href="/ProgressBG-Python/pages/agenda/agenda.html#Course_Intro" target="_top"><i class="fa fa-home"></i></a>
+			<span class="help_link" href="#"><i class="fa fa-question"></i></span>
+			<div class="help_text">
+				<div><span>N/Спейс</span><span>следващ слайд</span></div>
+				<div><span>P</span><span>предишен слайд</span></div>
+				<div><span>O</span><span>всички слайдове</span></div>
+				<div><span>ctrl+left click</span><span>увеличава елемента</span></div>
+			</div>
+		</div>
+		<div class="footer theme_switch">
+			<a href="#" onclick="document.getElementById('theme').setAttribute('href','/ProgressBG-Python/outfit/css/themes/dark.css'); return false;">Dark</a>
+			<a href="#" onclick="document.getElementById('theme').setAttribute('href','/ProgressBG-Python/outfit/css/themes/light.css'); return false;">Light</a>
+			<a href="#" onclick="document.getElementById('theme').setAttribute('href','/ProgressBG-Python/outfit/css/themes/projector.css'); return false;">Projector</a>
+		</div>
+		<div class="slides">
+<!--
+########################################################
+##################### SLIDES START #####################
+########################################################
+-->
+<section><h1>Functions in Python</h1></section>
+<section data-transition="zoom">
+	<!-- linkedin badge -->
+	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+	<section class="copyright" data-transition="zoom">
+		<div class="note">
+			<p>Created for</p>
+		</div>
+		<div class="company">
+			<a href="http://progressbg.net/програмиране-с-python-2/">
+			<img style="height:80%" src="/ProgressBG-Python/outfit/images/logos/ProgressBG_logo_529_127.png">
+			</a>
+		</div>
+		<div class="author">
+			<span class="note">Iva E. Popova, 2018,</span>
+			<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+		</div>
+	</section>
+	<section class="copyright" data-transition="zoom" style="margin-top: -2em;">
+		<div class="company">
+			 <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="ivapopova"><a class="LI-simple-link" href='https://bg.linkedin.com/in/ivapopova?trk=profile-badge'>Iva E. Popova on LinkedIn</a></div>
+		</div>
+	</section>
+</section>
+
+<section><h1>What are Functions</h1></section>
+<section><h2>What are Functions</h2>
+	<section>
+		<dl class="fa">
+			<dt>A function is a <span class="note">named block of statements</span> which perform one conceptual tasks.</dt>
+			<dt>A typical example for a function is a recipe in a cooking book.</dt>
+			<dt>The statements in the function are performed <span class="note">only after the function is called</span></dt>
+			<dt>Functions help us to organise our code (<span class="note">break a task into sub-tasks</span>)</dt>
+	</section>
+</section>
+
+<section><h1>Function Definition</h1></section>
+<section><h2>Function Definition</h2>
+	<section>
+		<pre><code rel="Syntax" class="python" data-noescape>
+			<b>def</b> <b>function_name(</b><em>opt_param_list</em><b>)</b><b>:</b>
+				<em>'''docstring'''</em>
+				statements
+				<em>return [expression]</em>
+		</code></pre>
+		<dl class="fa" style="font-size: .7em">
+			<dt>def</dt>
+			<dd>A keyword that starts the function definition</dd>
+			<dt>function_name</dt>
+			<dd>Should be valid <a href="/ProgressBG-Python/pages/themes/beginners/stringsNumbersVariablesComments/stringsNumbersVariablesComments.html#namingRules">variable name</a>.</dd>
+			<dt><em>opt_param_list</em></dt>
+			<dd>Optional. A list of function parameters. The <span class="note">braces around it are required</span>, even if the list is empty.</dd>
+			<dt><em>'''docstring'''</em></dt>
+			<dd>Optional. A string for function documentation.</dd>
+			<dt>statements</dt>
+			<dd>block of statements, also called <span class="note">function body</span></dd>
+			<dt><em>return [expression]</em></dt>
+			<dd>Optional. Specify what the return value of the function should be.</dd>
+		</dl>
+	</section>
+	<section><h3>simplest example</h3>
+		<pre><code rel="Python" class="python">
+			def congrats(name):
+				"""Print hello"""
+
+				print("Hello!")
+		</code></pre>
+		<p class="note">Note, this code will do nothing if you try to run it as is.</p>
+		<p>This is just the function's definition. In order to execute the statements in it, the function should be called!</p>
+	</section>
+</section>
+
+<section><h1>Function Call</h1></section>
+<section><h2>Function Call</h2>
+	<p>You can execute a function by calling it</p>
+	<pre><code rel="Syntax" class="python" data-noescape>
+		<b>function_name(</b><em>opt_arg_list</em><b>)</b>
+	</code></pre>
+</section>
+
+<section><h1>Function Definition</h1></section>
+<section><h2>Function Definition</h2>
+
+</section>
+
+
+
+<section><h2>HW</h2>
+	<section><h3>"Guess the number" - full version</h3>
+		<dl class="fa">
+			<dt>Write the full version of the "Guess the number" game, implementing the same rules as given in <a href="http://127.0.0.1:1111/ProgressBG-Python/pages/themes/beginners/logicalExpressionsAndConditionalStatements/logicalExpressionsAndConditionalStatements.html#/hw_guess_the_number">Guess the number game - the beginning</a>, but giving the user the chance to try more than once.</dt>
+			<dt>The user now will have 5 tries to guess.</dt>
+			<dt>If he/she could not manage to guess the number for 5 tries, the game stops, with a message:<br>"You lost! My number was X"</dt>
+			<dd>where X is the machine number</dd>
+		</dl>
+	</section>
+</section>
+
+<section class="disclaimer" data-background="/ProgressBG-Python/outfit/images/for_slides/the_end_on_sand.jpg">
+	 <p>These slides are based on</p>
+	 <p>customised version of </p>
+	 <p><a href="http://hakim.se/">Hakimel</a>'s <a href="http://lab.hakim.se/reveal-js">reveal.js</a></p>
+	 <p>framework</p>
+</section>
+<!--
+########################################################
+##################### SLIDES END   #####################
+########################################################
+-->
+		</div>
+	</div>
+	<!-- Custom processing -->
+	<script src="/ProgressBG-Python/outfit/js/slides.js"></script>
+	<!-- external scripts -->
+	<script src="/ProgressBG-Python/lib/reveal.js/lib/js/head.min.js"></script>
+	<script src="/ProgressBG-Python/lib/reveal.js/js/reveal.js"></script>
+	 <!-- init reveal -->
+	<script>
+		// Full list of configuration options available at:
+		// https://github.com/hakimel/reveal.js#configuration
+		var highlightjsTabSize = '  ';
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			slideNumber: 'c/t',
+			keyboard: true,
+			history: true,
+			center: true,
+			width: 1024,
+			height: 850,
+			// Bounds for smallest/largest possible scale to apply to content
+			// minScale: .5,
+			maxScale: 1,
+			// slide transition
+			transition: 'concave', // none/fade/slide/convex/concave/zoom
+			// Factor of the display size that should remain empty around the content
+			margin: 0.1,
+			// shift+maous click to zoom in/out element
+			zoomKey: 'ctrl',
+			// theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+			// transition: Reveal.getQueryHash().transition || 'default'
+			// Optional reveal.js plugins
+			dependencies: [
+				{ src: '/ProgressBG-Python/lib/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: '/ProgressBG-Python/lib/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: '/ProgressBG-Python/lib/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: '/ProgressBG-Python/lib/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.configure({tabReplace: highlightjsTabSize}); hljs.initHighlightingOnLoad(); } },
+				{ src: '/ProgressBG-Python/lib/reveal.js/plugin/zoom-js/zoom.js', async: true },
+				{ src: '/ProgressBG-Python/lib/reveal.js/plugin/notes/notes.js', async: true }
+			]
+		});
+	</script>
+</body>
+</html>
