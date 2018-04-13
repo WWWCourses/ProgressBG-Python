@@ -1,8 +1,7 @@
-def congrats(name):
-    """Say hello to user
+# define congrats() function:
+def congrats():
+  print("Hello!")
+  print(5/2)
 
-    Arguments:
-        name {string}
-    """
-
-    print("Hello {}!".format(name))
+# execute the congrats() function:
+congrats()

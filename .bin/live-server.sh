@@ -1,4 +1,4 @@
-nohup live-server --port=1111 --open=/ProgressBG-Python/pages/agenda/agenda.html \
+nohup live-server --port=3333 --open=/ProgressBG-Python/pages/agenda/agenda.html \
 --watch=/ProgressBG-Python   \
 /home/nemsys/projects/www/wwwcourses.github.io &
 

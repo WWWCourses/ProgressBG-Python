@@ -1,7 +1,21 @@
 {
 	"build_systems":
 	[
+		{
+			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+			"name": "Anaconda Python Builder",
+			"selector": "source.python",
+			"shell_cmd": "\"python\" -u \"$file\""
+		}
 	],
+	"env":
+	{
+		"Linux":
+		{
+			"PIPENV_MAX_DEPTH": "5",
+			"PIPENV_VENV_IN_PROJECT": "1"
+		}
+	},
 	"folders":
 	[
 		{
@@ -11,14 +25,17 @@
 	"settings":
 	{
 		"dictionary": "Packages/Language - Bulgarian/OldBulgarian.dic",
+		"fold_python_docstrings_number_of_lines": 1,
+		"fold_python_docstrings_onload": true,
 		"show_definitions": false,
+		"show_errors_inline": false,
+		"show_panel_on_build": true,
 		"spell_check": true,
 		"tab_size": 2,
-		"translate_tabs_to_spaces": false,
-		"trim_trailing_white_space_on_save": true,
+		"translate_tabs_to_spaces": true,
+		"trim_trailing_white_space_on_save": true
 	},
 	"sublime-view-in-browser":
 	{
 	},
-	"virtualenv": "/data/projects/www/wwwcourses.github.io/ProgressBG-Python/.venv"
 }

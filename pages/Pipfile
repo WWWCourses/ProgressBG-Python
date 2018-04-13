@@ -5,14 +5,12 @@ verify_ssl = true
 name = "pypi"
 
 
-[dev-packages]
-
-
-
 [packages]
 
-"flake8" = "*"
-matplotlib = "*"
+
+
+[dev-packages]
+
 
 
 [requires]
