@@ -5,22 +5,22 @@ from operator import itemgetter
 import re
 
 
-def get_html_content(url):
+def get_html(url):
 	if url.startswith("http"):
-		# make the request
+		# make the request - change UA to prevent server deny for scripts
 		req = request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
 
+		# get response
 		respone = request.urlopen(req)
 		return respone.read()
 	else:
 		with open(url,"r") as f:
 		  return f.read()
 
-def get_products(content):
-	bs_parser = BeautifulSoup(content, 'html.parser')
-	return bs_parser.find('ul', 'products')
+def scrape_data(page):
+	bs_parser = BeautifulSoup(page, 'html.parser')
+	products_html = bs_parser.find('ul', 'products')
 
-def scrape_data(products_html):
 	for product in products_html.find_all("article"):	
 		try:
 			name = product.select("div h2")[0].string
@@ -45,11 +45,11 @@ start_url = "https://laptop.bg/laptops-lenovo?page="
 # start_url = "to_scrape.html"
 products = []
 
-for i in range(10,16):
+for i in range(10,11):
 	url = start_url+str(i)
 	print("Scraping URL:", url)
-	products_html = get_products( get_html_content(url) )
-	scrape_data(products_html)
+	page = get_html(url)
+	scrape_data(page)
 	
 print_scraped_data(products)
 
