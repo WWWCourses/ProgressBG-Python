@@ -1,8 +1,6 @@
-from urllib import request,parse,error
+from urllib import request
 from bs4 import BeautifulSoup
-from collections import OrderedDict
-from operator import itemgetter    
-import re
+
 
 
 def get_html(url):
