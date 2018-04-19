@@ -87,8 +87,10 @@
 			<dd>file upload</dd>
 		</dl>
 	</section>
+	<section><h3>The basics of HTTP: Client-Server_Communication</h3>
+		<a href="images/Client-Server_Communication.png"><img src="images/Client-Server_Communication.png"></a>
+	</section>
 </section>
-
 
 <section><h1>Creating a Simple Django App</h1></section>
 <section><h2>Simple Crawler App</h2>
@@ -158,8 +160,8 @@
 </section>
 
 
-<section><h1>Code the ToDoApp</h1></section>
-<section><h2>Code the ToDoApp</h2>
+<section><h1>Start the ToDoApp</h1></section>
+<section><h2>Start the ToDoApp</h2>
 	<section><h3>Create ToDoListComponent</h3>
 		<pre><code rel="Terminal" class="shell" data-noescape>
 			$ django-admin startapp ToDoListComponent
@@ -231,36 +233,362 @@
 </section>
 
 
-<section><h1>___MainSectionTitle___</h1></section>
+<section><h1>Database setup</h1></section>
+<section><h2>Database setup</h2>
+	<section><h3>Overview of SQLite</h3>
+		<dl class="fa">
+			<dt>SQLite is an in-process library that implements a self-contained, serverless, zero-configuration, transactional SQL database engine</dt>
+			<dt>SQLite is in the public domain and is thus free for use for any purpose, commercial or private.</dt>
+			<dt class="note">SQLite is included in Python, so you won’t need to install anything else to support your database. When starting your first real project, however, you may want to use a more scalable database like PostgreSQL</dt>
+		</dl>
+	</section>
+	<section><h3>Setup the ToDoApp SQLite DB</h3>
+		<dl class="fa">
+			<dt>First, lets activate the DB needed for the pre-installed Django apps (admin, auth, contenttypes, sessions)</dt>
+		</dl>
+		<pre><code rel="Terminal" class="shell" data-noescape>
+			python manage.py migrate
+		</code></pre>
+		<pre><code rel="Output" class="shell" data-noescape>
+			Operations to perform:
+			  Apply all migrations: admin, auth, contenttypes, sessions
+			Running migrations:
+			  Applying contenttypes.0001_initial... OK
+			  Applying auth.0001_initial... OK
+			  Applying admin.0001_initial... OK
+			  Applying admin.0002_logentry_remove_auto_add... OK
+			  Applying contenttypes.0002_remove_content_type_name... OK
+			  Applying auth.0002_alter_permission_name_max_length... OK
+			  Applying auth.0003_alter_user_email_max_length... OK
+			  Applying auth.0004_alter_user_username_opts... OK
+			  Applying auth.0005_alter_user_last_login_null... OK
+			  Applying auth.0006_require_contenttypes_0002... OK
+			  Applying auth.0007_alter_validators_add_error_messages... OK
+			  Applying auth.0008_alter_user_username_max_length... OK
+			  Applying auth.0009_alter_user_last_name_max_length... OK
+			  Applying sessions.0001_initial... OK
+		</code></pre>
+	</section>
+	<section><h3>Create the model of ToDoApp</h3>
+		<dl class="fa">
+			<dt>Django uses models to interact with the database. </dt>
+			<dt>Each model represents a table in the database and it is used to add, update, delete data into the correponding table.</dt>
+			<dt>It's a kind of abstraction of database operations, so you do not need to know perfectly well SQL</dt>
+		</dl>
+	</section>
+	<section><h3></h3>
+		<dl class="fa">
+			<dt>Write in file <code>ToDoListComponent/models.py</code></dt>
+		</dl>
+		<pre><code rel="Python" class="python">
+			from django.db import models
+
+			# Create your models here.
+			class Task(models.Model):
+				id = models.AutoField(primary_key=True)
+			    title = models.CharField('Title', max_length=100)
+			    description = models.TextField('Description')
+			    created = models.DateTimeField(auto_now_add=True)
+			    due = models.DateTimeField('due date')
+			    end = models.DateTimeField('end date')
+
+			    def __str__(self):
+			        return self.title
+		</code></pre>
+	</section>
+	<section><h3>Plug the app</h3>
+		<dl class="fa">
+			<dt>To include the app in our project, we need to add a reference to its configuration class in the INSTALLED_APPS setting</dt>
+			<dt>Open the <code>ToDoApp/settings.py</code> and append to it:</dt>
+			<dd><code>'ToDoListComponent'</code></dd>
+		</dl>
+		<pre><code rel="ToDoApp/settings.py" class="python">
+			INSTALLED_APPS = [
+			    'ToDoListComponent',
+			    'django.contrib.admin',
+			    'django.contrib.auth',
+			    'django.contrib.contenttypes',
+			    'django.contrib.sessions',
+			    'django.contrib.messages',
+			    'django.contrib.staticfiles',
+			]
+		</code></pre>
+	</section>
+	<section><h3>Activate the app</h3>
+		<pre><code rel="Terminal" class="shell" data-noescape>
+			$ python manage.py makemigrations ToDoListComponent
+		</code></pre>
+	</section>
+	<section><h3>See the SQL which will be created</h3>
+		<pre><code rel="Terminal" class="shell" data-noescape>
+			$ python manage.py sqlmigrate ToDoListComponent 0001
+		</code></pre>
+		<pre><code rel="Output" class="shell" data-noescape>
+			CREATE TABLE "ToDoListComponent_task" (
+				"id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, 
+				"title" varchar(100) NOT NULL, 
+				"description" text NOT NULL, 
+				"created" datetime NOT NULL, 
+				"due" datetime NOT NULL, 
+				"end" datetime NOT NULL);
+			COMMIT;
+		</code></pre>
+	</section>
+	<section><h3>Create the model table in the DB</h3>
+		<dl class="fa">
+			<dt>Now, run migrate tool to create the ToDoListComponent model tables in your database:</dt>
+		</dl>
+		<pre><code rel="Python" class="python">
+			python manage.py migrate
+		</code></pre>
+		<pre><code rel="Output" class="shell" data-noescape>
+			Operations to perform:
+			  Apply all migrations: ToDoListComponent, admin, auth, contenttypes, sessions
+			Running migrations:
+			  Applying ToDoListComponent.0001_initial... OK
+		</code></pre>
+	</section>
+</section>
+
+<section><h1>Introducing the Django Admin</h1></section>
+<section><h2>Introducing the Django Admin</h2>
+	<section><h3>Creating an admin user</h3>
+		<p>In root Project Folder (ToDoAppProject) type:</p>
+		<pre><code rel="Terminal" class="shell" data-noescape>
+			$ python manage.py createsuperuser
+		</code></pre>
+		<p>You'll be prompt to enter the admin user details</p>
+		<pre><code rel="Output" class="shell" data-noescape>
+			Username (leave blank to use 'nemsys'): admin
+			Email address: admin@test.me
+			Password: 
+			Password (again): 
+			This password is too short. It must contain at least 8 characters.
+			This password is too common.
+			This password is entirely numeric.
+			Password: 
+			Password (again): 
+			Superuser created successfully.
+		</code></pre>
+	</section>
+	<section><h3>Start the Admin Control Panel</h3>
+		<dl class="fa">
+			<dt>If there are any running Django server stop it first</dt>
+			<dt>Now, start the server again:</dt>
+		</dl>
+		<pre><code rel="Terminal" class="shell" data-noescape>
+			$ python manage.py runserver
+		</code></pre>	
+		<dl class="fa">
+			<dt>Go to <a href="http://127.0.0.1:8000/admin/login/?next=/admin/">http://127.0.0.1:8000/admin/login/?next=/admin/</a></dt>
+		</dl>
+	</section>
+	<section>
+		<p>An admin panel should be loaded:</p>
+		<a href="images/Django site admin.png"><img src="images/Django site admin.png"></a>
+	</section>
+	<section><h3>Add our ToDoApp to the Admin Interface</h3>
+		<dl class="fa">
+			<dt>Open <code>ToDoListComponent/admin.py</code> and register our Task model:</dt>
+		</dl>
+		<pre><code rel="ToDoListComponent/admin.py" class="python">
+			from django.contrib import admin
+
+			# Register your models here.
+			from .models import Task
+
+			admin.site.register(Task)
+		</code></pre>
+	</section>
+	<section>
+		<dl class="fa">
+			<dt>If you refresh the Admin Interface (<kbd>CTRL+F5</kbd>), you should now see our Tasks model</dt>
+		</dl>
+		<a href="images/Tasks_IN_Django site admin.png"><img src="images/Tasks_IN_Django site admin.png" style="height: 70vh"></a>
+		<dl class="fa" style="font-size: 0.8em">
+			<dt>From here, you can interface with the Task table, and add/modify/remove data</dt>
+			<dt>The edit form will be automatically generated from the Tasks model.</dt>
+		</dl>
+	</section>
+</section>
+
+<section><h1>Query DB from our ToDoApp</h1>
+	<dl class="fa">
+		<dt>Change <code>ToDoListComponent/views.py</code> as:</dt>
+	</dl>
+	<pre><code rel="ToDoListComponent/views.py" class="python">
+		from django.shortcuts import render
+		from django.http import HttpResponse
+		from .models import Task
+
+
+		def index(request):
+		    latest_tasks = Task.objects.order_by('-due')[:5]
+		    output ="<h1>Taks:</h1>"
+		    output += ', '.join([q.title for q in latest_tasks])
+		    return HttpResponse(output)
+	</code></pre>
+</section>
+
+
+<section><h1>Add some Templates</h1></section>
+<section><h2>Add some Templates</h2>
+	<section><h3>task_list template</h3>
+		<dl class="fa">
+			<dt>In ToDoListComponent create a folder named <code>templates</code> and make the file <code>tasks_index.html</code> in it.</dt>
+		</dl>
+		<pre><code rel="Terminal" class="shell" data-noescape>
+			ToDoListComponent/
+			├── admin.py
+			├── apps.py
+			├── __init__.py
+			├── migrations
+			│   ├── 0001_initial.py
+			│   ├── __init__.py
+			│   └── __pycache__
+			│       ├── 0001_initial.cpython-36.pyc
+			│       └── __init__.cpython-36.pyc
+			├── models.py
+			├── __pycache__
+			│   ├── admin.cpython-36.pyc
+			│   ├── apps.cpython-36.pyc
+			│   ├── __init__.cpython-36.pyc
+			│   ├── models.cpython-36.pyc
+			│   ├── urls.cpython-36.pyc
+			│   └── views.cpython-36.pyc
+			├── templates
+			│   └── tasks_index.html
+			├── tests.py
+			├── urls.py
+			└── views.py
+		</code></pre>
+	</section>
+	<section>
+		<dl class="fa">
+			<dt>Add the HTML template code in <code>templates/tasks_index.html</code></dt>
+		</dl>
+		<pre><code rel="HTML" class="html">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&quot;&gt;
+			  &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+			  &lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+			  &lt;title&gt;ToDo App&lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			  &lt;div class=&quot;jumbotron text-center&quot;&gt;
+			    &lt;h1&gt;ToDo's&lt;/h1&gt;
+			  &lt;/div&gt;
+
+			  &lt;div class=&quot;container&quot;&gt;
+			    &lt;div class=&quot;row&quot;&gt;
+			      &lt;div class=&quot;col-sm-4&quot;&gt;
+			      &lt;/div&gt;
+			      &lt;div class=&quot;col-sm-4&quot;&gt;
+			        &lt;h3&gt;Tasks List&lt;/h3&gt;
+			        &lt;table&gt;
+			          &lt;tr&gt;
+			            &lt;th&gt;Task&lt;/th&gt;
+			            &lt;th&gt;Due?&lt;/th&gt;
+			          &lt;/tr&gt;
+			          {% for task in task_list %}
+			          &lt;tr&gt;
+			            &lt;td&gt;
+			              {{ task.title }}
+			            &lt;/td&gt;
+			            &lt;td&gt;
+			              {{ task.due }}
+			            &lt;/td&gt;
+			          &lt;/tr&gt;
+			          {% endfor %}
+			        &lt;/table&gt;
+			      &lt;/div&gt;
+			      &lt;div class=&quot;col-sm-4&quot;&gt;
+			      &lt;/div&gt;
+			    &lt;/div&gt;
+			  &lt;/div&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</code></pre>
+		<p>Or copy the raw code from <a href="https://pastebin.com/raw/Ks3xN1zR">here</a></p>
+	</section>
+	<section>
+		<dl class="fa">
+			<dt>Update our <code>ToDoListComponent/views.py</code> in order to use the template, and fill it will DB data</dt>
+		</dl>
+		<pre><code rel="Python" class="python">
+			from django.shortcuts import render
+			from django.http import HttpResponse
+			from .models import Task
+
+			def index(request):
+				# query the DB
+		    task_list = Task.objects.all()
+
+		    return render(
+		        request,
+		        'tasks_index.html',
+		        {
+		            'task_list' : task_list,
+		        }
+		    )
+		</code></pre>
+	</section>
+	<section><h3>Add some CSS</h3>
+		<dl class="fa">
+			<dt>In the ToDoListComponent folder create the folder path<code>static/css</code>, and in it - make the file <code>base.css</code></dt>
+		</dl>
+		<pre><code rel="Terminal" class="shell" data-noescape>
+			ToDoListComponent/
+			├── admin.py
+			├── apps.py
+			├── __init__.py
+			├── migrations
+			│   ├── 0001_initial.py
+			│   ├── __init__.py
+			│   └── __pycache__
+			│       ├── 0001_initial.cpython-36.pyc
+			│       └── __init__.cpython-36.pyc
+			├── models.py
+			├── __pycache__
+			│   ├── admin.cpython-36.pyc
+			│   ├── apps.cpython-36.pyc
+			│   ├── __init__.cpython-36.pyc
+			│   ├── models.cpython-36.pyc
+			│   ├── urls.cpython-36.pyc
+			│   └── views.cpython-36.pyc
+			├── static
+			│   └── css
+			│       └── base.css
+			├── templates
+			│   └── tasks_index.html
+			├── tests.py
+			├── urls.py
+			└── views.py
+		</code></pre>
+	</section>
+	<section>
+		<dl class="fa">
+			<dt>Put some CSS into <code>static/css/base.css</code>, and refresh the page/or run the server again, if it was turn off</dt>
+		</dl>
+		<pre><code rel="HTML" class="html">
+			body{
+				background: #FFBDBD
+			}
+			td {
+			  padding: 10px 5px;
+			}
+		</code></pre>
+	</section>
+</section>
+
+<!-- <section><h1>___MainSectionTitle___</h1></section>
 <section><h2>___MainSectionTitle___</h2>
 	<section><h3>___SubSectionTitle___</h3>
 
 	</section>
-</section>
-
-<section><h1>___MainSectionTitle___</h1></section>
-<section><h2>___MainSectionTitle___</h2>
-	<section><h3>___SubSectionTitle___</h3>
-
-	</section>
-</section>
-
-
-<section><h1>___MainSectionTitle___</h1></section>
-<section><h2>___MainSectionTitle___</h2>
-	<section><h3>___SubSectionTitle___</h3>
-
-	</section>
-</section>
-
-
-<section><h1>___MainSectionTitle___</h1></section>
-<section><h2>___MainSectionTitle___</h2>
-	<section><h3>___SubSectionTitle___</h3>
-
-	</section>
-</section>
-
+</section> -->
 
 <section><h1>Useful Commands</h1></section>
 <section><h2>Useful Commands</h2>
